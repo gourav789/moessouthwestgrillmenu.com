@@ -1,4 +1,7 @@
 User-agent: *
+Disallow: /category/
+Disallow: /tag/
+Disallow: /tags/
 Allow: /
 
 Sitemap: https://moessouthwestgrillmenu.com/sitemap.xml

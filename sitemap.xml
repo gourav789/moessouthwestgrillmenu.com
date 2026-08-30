@@ -30,18 +30,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://moessouthwestgrillmenu.com/category/menu/</loc>
-    <lastmod>2026-08-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://moessouthwestgrillmenu.com/category/nutrition/</loc>
-    <lastmod>2026-08-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
+
   <url>
     <loc>https://moessouthwestgrillmenu.com/author/ruby-giuliani/</loc>
     <lastmod>2026-08-30</lastmod>
