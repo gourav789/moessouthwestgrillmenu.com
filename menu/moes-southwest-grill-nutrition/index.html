@@ -1,0 +1,2794 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free Moe's Southwest Grill Nutrition Calculator — build your meal, track calories, protein, fat, carbs &amp; sodium instantly. Complete 2026 Moe's nutrition chart included.">
+    <meta name="keywords" content="Moe's Southwest Grill nutrition, Moe's calories, Moe's nutrition calculator, Moe's menu nutrition facts, Moe's burrito calories">
+    <meta name="robots" content="index, follow">
+    <title>Moe's Southwest Grill Nutrition Tool 2026 | Calorie &amp; Macro Calculator | moessouthwestgrillmenu.com</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;display=swap" rel="stylesheet">
+
+    <style>
+
+/* ============================================================
+   GENERATEPRESS THEME OVERRIDES — FULL-WIDTH BREAK-OUT
+============================================================ */
+.entry-content,
+.entry-content > *:first-child,
+.site-content,
+.content-area,
+.inside-article,
+.inside-page-hero,
+article.post,
+article.page,
+.post-content,
+.page-content,
+.hentry,
+.generate-columns-container,
+.inside-right-sidebar,
+.inside-left-sidebar {
+    padding:    0 !important;
+    margin:     0 !important;
+    max-width:  100% !important;
+    width:      100% !important;
+    background: transparent !important;
+    border:     none !important;
+    box-shadow: none !important;
+}
+.site-main,
+#main,
+#content,
+.inside-site-inner {
+    background: transparent !important;
+    padding:    0 !important;
+    margin:     0 !important;
+    max-width:  100% !important;
+}
+.grid-container {
+    max-width: 100% !important;
+    padding:   0 !important;
+}
+body, .site { background-color: #fdf6ee !important; }
+.widget-area,
+.sidebar-primary,
+.sidebar-secondary,
+#sidebar,
+#secondary { display: none !important; }
+/* ============================================================ */
+
+/* ---- RESET ---- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* ---- DESIGN TOKENS ---- */
+:root {
+    --primary:   #B5451B;
+    --secondary: #E8913A;
+    --accent:    #2D7D46;
+    --gold:      #E8913A;
+    --dark-bg:   #1a1a1a;
+    --light-bg:  #fdf6ee;
+    --card-bg:   #ffffff;
+    --text-dark: #2c2c2c;
+    --text-mid:  #444444;
+    --text-light:#666666;
+}
+
+/* ---- BODY ---- */
+body {
+    font-family: 'Georgia', 'Garamond', serif;
+    background-color: var(--light-bg);
+    color: var(--text-dark);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* ---- FULL-WIDTH BREAKOUT ---- */
+.fw-breakout {
+    width:         100vw !important;
+    max-width:     100vw !important;
+    position:      relative;
+    left:          50%;
+    margin-left:  -50vw !important;
+    margin-right: -50vw !important;
+    box-sizing:    border-box;
+}
+
+/* ============================================================
+   DISCLAIMER BANNER
+============================================================ */
+.disclaimer-banner {
+    background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+    border-bottom: 3px solid #ff9800;
+    padding: 14px 20px;
+    text-align: center;
+    font-size: 13px;
+    color: #333;
+}
+.disclaimer-banner strong { color: #d84315; font-weight: 700; }
+.disclaimer-banner a      { color: #0066cc; text-decoration: underline; }
+
+/* ============================================================
+   HERO SECTION
+============================================================ */
+.hero-section {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    color: #fff;
+    padding: 55px 30px 45px;
+    text-align: center;
+    border-bottom: 5px solid var(--gold);
+    animation: fadeInDown 0.8s ease-out;
+}
+.hero-section h1 {
+    font-size: clamp(28px, 5.5vw, 54px);
+    font-weight: 700;
+    margin-bottom: 14px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.5);
+    font-family: 'Playfair Display','Georgia',serif;
+    letter-spacing: 1px;
+}
+.hero-tagline {
+    font-size: clamp(15px, 3vw, 21px);
+    color: var(--gold);
+    margin-bottom: 18px;
+    font-style: italic;
+}
+.site-attribution {
+    font-size: 14px;
+    color: #aaa;
+    margin-bottom: 22px;
+    font-style: italic;
+}
+.site-attribution strong { color: var(--gold); }
+.hero-sub {
+    font-size: 15px;
+    color: #ddd;
+    margin-bottom: 28px;
+}
+.hero-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 18px;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.info-card {
+    background: rgba(232,145,58,.13);
+    padding: 15px;
+    border-radius: 6px;
+    border-left: 4px solid var(--secondary);
+    font-size: 14px;
+    color: #ddd;
+}
+.info-card strong {
+    color: var(--gold);
+    display: block;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+@keyframes fadeInDown {
+    from { opacity:0; transform:translateY(-20px); }
+    to   { opacity:1; transform:translateY(0); }
+}
+@keyframes fadeInUp {
+    from { opacity:0; transform:translateY(20px); }
+    to   { opacity:1; transform:translateY(0); }
+}
+@keyframes pulse {
+    0%,100% { transform: scale(1); }
+    50%      { transform: scale(1.03); }
+}
+@keyframes countUp {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ============================================================
+   TABLE OF CONTENTS
+============================================================ */
+.toc-section {
+    background: var(--card-bg);
+    padding: 42px 30px;
+    border-top: 3px solid var(--accent);
+    border-bottom: 1px solid var(--secondary);
+    margin-bottom: 50px;
+}
+.toc-section h2 {
+    text-align: center;
+    font-size: clamp(22px, 4.5vw, 34px);
+    margin-bottom: 30px;
+    color: var(--primary);
+    font-family: 'Playfair Display','Georgia',serif;
+    letter-spacing: 1px;
+    border-bottom: none !important;
+    padding-bottom: 0 !important;
+}
+.toc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(195px, 1fr));
+    gap: 16px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.toc-item {
+    background: linear-gradient(135deg,#fdf6ee,#faebd7);
+    padding: 16px 18px;
+    border-radius: 6px;
+    border-left: 4px solid var(--primary);
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.toc-item:hover {
+    background: linear-gradient(135deg,#faebd7,#f5dfc0);
+    transform: translateX(5px);
+    border-left-color: var(--accent);
+}
+.toc-item a {
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 600;
+    display: block;
+    font-size: 14px;
+}
+
+/* ============================================================
+   MAIN CONTAINER
+============================================================ */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 30px;
+    width: 100%;
+}
+
+section {
+    margin-bottom: 65px;
+    animation: fadeInUp .7s ease-out;
+}
+
+/* ============================================================
+   SECTION HEADERS
+============================================================ */
+section h2 {
+    font-size: clamp(24px, 5vw, 44px);
+    font-family: 'Playfair Display','Georgia',serif;
+    color: var(--primary);
+    margin-bottom: 28px;
+    padding-bottom: 14px;
+    border-bottom: 3px solid var(--gold);
+    letter-spacing: 1px;
+}
+section h3 {
+    font-size: clamp(17px, 3.5vw, 28px);
+    font-family: 'Playfair Display','Georgia',serif;
+    color: var(--primary);
+    margin-top: 35px;
+    margin-bottom: 18px;
+}
+
+/* ============================================================
+   NUTRITION TOOL — CALCULATOR LAYOUT
+============================================================ */
+.tool-intro-box {
+    background: linear-gradient(135deg, #fdf0e0, #fdf6ee);
+    padding: 28px 30px;
+    border-radius: 8px;
+    margin-bottom: 38px;
+    border-left: 5px solid var(--accent);
+    font-size: 15px;
+    line-height: 1.8;
+}
+.tool-intro-box p { margin-bottom: 10px; }
+.tool-intro-box p:last-child { margin-bottom: 0; }
+
+.calculator-layout {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    gap: 32px;
+    align-items: start;
+}
+
+/* ---- BUILDER PANEL ---- */
+.builder-panel {}
+.builder-step {
+    background: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,.09);
+    margin-bottom: 22px;
+    overflow: hidden;
+    border-top: 4px solid var(--primary);
+    transition: box-shadow .3s ease;
+}
+.builder-step:hover { box-shadow: 0 6px 20px rgba(0,0,0,.13); }
+
+.step-header {
+    background: linear-gradient(135deg, #fdf6ee, #faebd7);
+    padding: 16px 22px;
+    border-bottom: 1px solid #e8dece;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.step-number {
+    background: var(--primary);
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+.step-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--primary);
+    font-family: 'Playfair Display', serif;
+}
+.step-subtitle {
+    font-size: 12px;
+    color: var(--text-light);
+    margin-top: 2px;
+}
+
+.step-body { padding: 18px 22px; }
+
+/* ---- RADIO / CHECKBOX OPTIONS ---- */
+.option-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 10px;
+}
+.option-grid.two-col {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.option-grid.single-col {
+    grid-template-columns: 1fr;
+}
+
+.option-item {
+    position: relative;
+}
+.option-item input[type="radio"],
+.option-item input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.option-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px;
+    background: #fafaf8;
+    border: 2px solid #e8dece;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all .25s ease;
+    font-size: 13px;
+    color: var(--text-dark);
+    line-height: 1.4;
+    user-select: none;
+}
+.option-label:hover {
+    border-color: var(--secondary);
+    background: #fdf0e0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,.08);
+}
+.option-item input:checked + .option-label {
+    border-color: var(--primary);
+    background: linear-gradient(135deg, #fdf0e0, #faebd7);
+    box-shadow: 0 2px 8px rgba(181,69,27,.15);
+}
+.option-icon {
+    font-size: 20px;
+    flex-shrink: 0;
+}
+.option-text {}
+.option-name {
+    font-weight: 600;
+    color: var(--primary);
+    display: block;
+    margin-bottom: 2px;
+}
+.option-cal {
+    font-size: 12px;
+    color: var(--text-light);
+}
+.option-macro {
+    font-size: 11px;
+    color: var(--text-light);
+    margin-top: 2px;
+}
+.option-badge {
+    margin-left: auto;
+    background: var(--accent);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 20px;
+    flex-shrink: 0;
+}
+.option-badge.gold { background: var(--gold); }
+.option-badge.red  { background: var(--primary); }
+
+/* Custom checkbox/radio indicator */
+.option-indicator {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s ease;
+    background: #fff;
+}
+.option-indicator.square { border-radius: 4px; }
+.option-item input:checked + .option-label .option-indicator {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+.option-item input:checked + .option-label .option-indicator::after {
+    content: '✓';
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+/* ============================================================
+   NUTRITION SUMMARY PANEL (sticky sidebar)
+============================================================ */
+.summary-panel {
+    position: sticky;
+    top: 20px;
+}
+
+.calorie-display {
+    background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+    color: #fff;
+    padding: 30px 26px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 3px solid var(--gold);
+    box-shadow: 0 6px 24px rgba(0,0,0,.2);
+}
+.calorie-label {
+    font-size: 12px;
+    color: #aaa;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+.calorie-number {
+    font-size: clamp(52px, 8vw, 80px);
+    font-weight: 700;
+    color: var(--gold);
+    font-family: 'Playfair Display', serif;
+    line-height: 1;
+    transition: all .3s ease;
+    animation: countUp .3s ease;
+}
+.calorie-unit {
+    font-size: 16px;
+    color: #aaa;
+    margin-top: 6px;
+}
+.daily-value-bar-wrap {
+    margin-top: 16px;
+}
+.daily-value-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: #999;
+    margin-bottom: 6px;
+}
+.daily-value-bar-bg {
+    background: rgba(255,255,255,.15);
+    border-radius: 20px;
+    height: 8px;
+    overflow: hidden;
+}
+.daily-value-bar-fill {
+    height: 100%;
+    border-radius: 20px;
+    background: linear-gradient(90deg, var(--accent), var(--secondary));
+    transition: width .5s ease;
+    width: 0%;
+}
+
+/* ---- MACRO CARDS ---- */
+.macro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+.macro-card {
+    background: var(--card-bg);
+    border-radius: 8px;
+    padding: 16px 14px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.09);
+    border-top: 3px solid var(--secondary);
+    text-align: center;
+    transition: all .3s ease;
+}
+.macro-card:hover { transform: translateY(-3px); box-shadow: 0 5px 14px rgba(0,0,0,.13); }
+.macro-card.protein { border-top-color: var(--accent); }
+.macro-card.fat     { border-top-color: #e67e22; }
+.macro-card.carbs   { border-top-color: var(--primary); }
+.macro-card.sodium  { border-top-color: #7f8c8d; }
+
+.macro-icon  { font-size: 22px; margin-bottom: 6px; }
+.macro-value {
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    color: var(--text-dark);
+    transition: all .3s ease;
+    animation: countUp .3s ease;
+}
+.macro-name  { font-size: 11px; color: var(--text-light); margin-top: 3px; text-transform: uppercase; letter-spacing: 1px; }
+.macro-dv    { font-size: 10px; color: #bbb; margin-top: 4px; }
+.macro-bar-bg {
+    background: #f0f0f0;
+    border-radius: 20px;
+    height: 5px;
+    margin-top: 8px;
+    overflow: hidden;
+}
+.macro-bar-fill {
+    height: 100%;
+    border-radius: 20px;
+    transition: width .5s ease;
+    width: 0%;
+}
+.macro-card.protein .macro-bar-fill { background: var(--accent); }
+.macro-card.fat     .macro-bar-fill { background: #e67e22; }
+.macro-card.carbs   .macro-bar-fill { background: var(--primary); }
+.macro-card.sodium  .macro-bar-fill { background: #7f8c8d; }
+
+/* ---- ORDER SUMMARY ---- */
+.order-summary-box {
+    background: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,.09);
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+.order-summary-header {
+    background: linear-gradient(135deg, var(--primary), #cc5522);
+    color: #fff;
+    padding: 14px 20px;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.order-summary-body {
+    padding: 16px 18px;
+    max-height: 320px;
+    overflow-y: auto;
+}
+.order-summary-body::-webkit-scrollbar { width: 4px; }
+.order-summary-body::-webkit-scrollbar-track { background: #f5f5f5; }
+.order-summary-body::-webkit-scrollbar-thumb { background: var(--secondary); border-radius: 4px; }
+
+.order-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 0;
+    border-bottom: 1px solid #f0ede8;
+    font-size: 13px;
+    transition: background .2s;
+    gap: 10px;
+}
+.order-row:last-child { border-bottom: none; }
+.order-row-name { color: var(--text-dark); flex: 1; }
+.order-row-cat  { font-size: 10px; color: var(--text-light); display: block; margin-top: 2px; }
+.order-row-cal  { 
+    font-weight: 700; 
+    color: var(--accent); 
+    font-family: 'Playfair Display', serif;
+    white-space: nowrap;
+    font-size: 13px;
+}
+.order-row-cal.zero { color: #bbb; }
+.order-summary-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 18px;
+    background: linear-gradient(135deg, #fdf6ee, #faebd7);
+    border-top: 2px solid var(--secondary);
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--primary);
+}
+.order-summary-total span:last-child {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    color: var(--accent);
+}
+.order-empty {
+    text-align: center;
+    padding: 20px;
+    color: #bbb;
+    font-style: italic;
+    font-size: 13px;
+    line-height: 1.7;
+}
+.order-empty-icon { font-size: 32px; display: block; margin-bottom: 8px; }
+
+.reset-btn {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #666, #444);
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .3s ease;
+    font-family: 'Georgia', serif;
+    letter-spacing: 0.5px;
+}
+.reset-btn:hover {
+    background: linear-gradient(135deg, #555, #333);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,.2);
+}
+.reset-btn:active { transform: translateY(0); }
+
+/* Nutrition disclaimer note */
+.nutrition-note {
+    font-size: 11px;
+    color: #999;
+    text-align: center;
+    margin-top: 12px;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+/* ============================================================
+   HOW TO USE SECTION
+============================================================ */
+.how-to-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 22px;
+    margin: 28px 0;
+}
+.how-to-card {
+    background: var(--card-bg);
+    padding: 26px 22px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,.08);
+    border-top: 4px solid var(--accent);
+    transition: all .3s ease;
+    position: relative;
+}
+.how-to-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,.12);
+}
+.how-to-number {
+    position: absolute;
+    top: -14px;
+    left: 22px;
+    background: var(--primary);
+    color: #fff;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: 'Georgia', serif;
+}
+.how-to-icon { font-size: 30px; margin-bottom: 12px; display: block; }
+.how-to-card h4 {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 8px;
+    font-family: 'Playfair Display', serif;
+}
+.how-to-card p { font-size: 13px; color: var(--text-light); line-height: 1.7; }
+
+/* ============================================================
+   NUTRITION CHART TABLE
+============================================================ */
+.chart-filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 24px;
+}
+.chart-filter-btn {
+    padding: 8px 18px;
+    border: 2px solid var(--primary);
+    background: transparent;
+    color: var(--primary);
+    border-radius: 30px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all .25s ease;
+    font-family: 'Georgia', serif;
+    font-weight: 600;
+}
+.chart-filter-btn:hover,
+.chart-filter-btn.active {
+    background: var(--primary);
+    color: #fff;
+}
+.table-wrapper {
+    overflow-x: auto;
+    margin: 20px 0;
+    border-radius: 8px;
+    -webkit-overflow-scrolling: touch;
+    box-shadow: 0 2px 10px rgba(0,0,0,.08);
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--card-bg);
+}
+thead {
+    background: linear-gradient(135deg, var(--primary), #cc5522);
+    color: #fff;
+}
+thead th {
+    padding: 16px 14px;
+    text-align: left;
+    font-weight: 700;
+    font-size: 13px;
+    white-space: nowrap;
+    font-family: 'Georgia', serif;
+}
+thead th:not(:first-child) { text-align: center; }
+tbody tr {
+    border-bottom: 1px solid #e8dece;
+    transition: background .2s;
+}
+tbody tr:nth-child(even) { background: #fdf9f5; }
+tbody tr:hover { background: #fdf0e0; }
+tbody td {
+    padding: 13px 14px;
+    font-size: 13px;
+}
+tbody td:not(:first-child) { text-align: center; }
+tbody td:first-child { font-weight: 600; color: var(--text-dark); }
+.cat-row td {
+    background: linear-gradient(135deg, #fdf6ee, #faebd7) !important;
+    color: var(--primary) !important;
+    font-weight: 700 !important;
+    font-size: 13px !important;
+    padding: 10px 14px !important;
+    border-top: 2px solid var(--secondary);
+}
+.cal-cell { font-weight: 700 !important; color: var(--accent) !important; font-family: 'Playfair Display', serif; }
+.high-cal { color: #d32f2f !important; }
+.med-cal  { color: #f57c00 !important; }
+.low-cal  { color: var(--accent) !important; }
+
+/* ============================================================
+   INFO SECTIONS (grid cards)
+============================================================ */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    margin: 28px 0;
+}
+.info-card-lg {
+    background: var(--card-bg);
+    padding: 26px;
+    border-radius: 8px;
+    border-left: 5px solid var(--secondary);
+    box-shadow: 0 3px 8px rgba(0,0,0,.09);
+    transition: all .3s ease;
+}
+.info-card-lg:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,.14);
+}
+.info-card-lg h4 {
+    color: var(--accent);
+    margin-bottom: 12px;
+    font-size: clamp(15px, 2.5vw, 18px);
+    font-family: 'Playfair Display', serif;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--secondary);
+}
+.info-card-lg p {
+    font-size: 13px;
+    color: var(--text-light);
+    line-height: 1.75;
+    margin-bottom: 10px;
+}
+.info-card-lg p:last-child { margin-bottom: 0; }
+.info-card-lg ul {
+    margin: 10px 0 0 16px;
+}
+.info-card-lg ul li {
+    font-size: 13px;
+    color: var(--text-light);
+    line-height: 1.7;
+    margin-bottom: 5px;
+}
+
+.highlight-dark {
+    background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+    color: #fff;
+    padding: 48px 40px;
+    border-radius: 8px;
+    margin: 35px 0;
+    text-align: center;
+}
+.highlight-dark h3 {
+    color: var(--gold);
+    border-bottom: 2px solid var(--gold);
+    padding-bottom: 11px;
+    margin-top: 0;
+    font-size: clamp(18px, 3.5vw, 28px);
+    display: inline-block;
+}
+.highlight-dark p { color: #ddd; font-size: 15px; max-width: 780px; margin: 14px auto 0; line-height: 1.7; }
+.highlight-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(155px, 1fr));
+    gap: 22px;
+    margin-top: 32px;
+}
+.highlight-stat {
+    background: rgba(232,145,58,.13);
+    padding: 24px;
+    border-radius: 6px;
+}
+.highlight-stat .number {
+    font-size: 30px;
+    color: var(--gold);
+    font-weight: bold;
+    font-family: 'Playfair Display',serif;
+}
+.highlight-stat .label { font-size: 12px; color: #ccc; margin-top: 8px; }
+
+/* ============================================================
+   PRICING BOX / CALLOUT BOX
+============================================================ */
+.callout-box {
+    background: linear-gradient(135deg, #fdf0e0, #fdf6ee);
+    padding: 26px;
+    border-radius: 8px;
+    margin: 22px 0;
+    border-left: 5px solid var(--accent);
+}
+.callout-box h4 { color: var(--primary); margin-bottom: 10px; font-size: 16px; font-family: 'Playfair Display', serif; }
+.callout-box p  { font-size: 13px; color: var(--text-dark); line-height: 1.7; margin-bottom: 8px; }
+.callout-box p:last-child { margin-bottom: 0; }
+
+/* ============================================================
+   FAQ
+============================================================ */
+.faq-container { max-width: 100%; margin: 28px 0; }
+.faq-item {
+    background: var(--card-bg);
+    margin-bottom: 13px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,.08);
+}
+.faq-question {
+    background: linear-gradient(135deg,#fdf6ee,#faebd7);
+    padding: 18px 20px;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    transition: all .3s ease;
+    user-select: none;
+}
+.faq-question:hover { background: linear-gradient(135deg,#faebd7,#f5dfc0); }
+.faq-toggle {
+    font-size: 18px;
+    color: var(--accent);
+    transition: transform .3s ease;
+    flex-shrink: 0;
+    margin-left: 14px;
+}
+.faq-item.active .faq-toggle { transform: rotate(180deg); }
+.faq-answer {
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    background: #fafaf8;
+    transition: all .35s ease;
+}
+.faq-item.active .faq-answer { padding: 20px 22px; max-height: 700px; }
+.faq-answer p { font-size: 13px; color: var(--text-light); line-height: 1.8; margin-bottom: 8px; }
+.faq-answer p:last-child { margin-bottom: 0; }
+.faq-answer ul { margin: 8px 0 0 18px; }
+.faq-answer ul li { font-size: 13px; color: var(--text-light); line-height: 1.7; margin-bottom: 5px; }
+.faq-answer strong { color: var(--primary); }
+
+/* ============================================================
+   OVERVIEW GRID (re-used from homepage)
+============================================================ */
+.overview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    margin: 28px 0;
+}
+.overview-card {
+    background: var(--card-bg);
+    padding: 26px;
+    border-radius: 8px;
+    border-left: 5px solid var(--secondary);
+    box-shadow: 0 3px 8px rgba(0,0,0,.09);
+    transition: all .3s ease;
+}
+.overview-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,.14);
+}
+.overview-card h3 {
+    color: var(--accent);
+    margin-bottom: 10px;
+    border-bottom: 2px solid var(--secondary);
+    padding-bottom: 9px;
+    margin-top: 0;
+    font-size: clamp(15px, 2.5vw, 20px);
+}
+.overview-card p { font-size: 13px; color: var(--text-light); line-height: 1.75; }
+
+/* ============================================================
+   CTA SECTION
+============================================================ */
+.cta-section {
+    background: linear-gradient(135deg, var(--primary), #8b2500);
+    color: #fff;
+    padding: 60px 40px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 60px 0;
+}
+.cta-section h2 { color: #fff !important; border-bottom-color: rgba(255,255,255,.3) !important; margin-bottom: 18px; }
+.cta-section p  { font-size: 17px; margin-bottom: 28px; }
+.cta-buttons    { display: flex; gap: 18px; flex-wrap: wrap; justify-content: center; }
+.cta-button {
+    display: inline-block;
+    padding: 15px 38px;
+    background: #fff;
+    color: var(--primary);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all .3s ease;
+    font-size: 15px;
+    border: 2px solid #fff;
+    min-width: 190px;
+}
+.cta-button:hover { background: transparent; color: #fff; }
+.cta-button.secondary { background: transparent; color: #fff; border-color: #fff; }
+.cta-button.secondary:hover { background: rgba(255,255,255,.12); }
+
+/* ============================================================
+   FOOTER
+============================================================ */
+.restaurant-footer {
+    background: #1a1a1a;
+    color: #ccc;
+    padding: 52px 30px;
+    text-align: center;
+    border-top: 3px solid var(--gold);
+    margin-top: 60px;
+}
+.footer-content  { max-width: 1400px; margin: 0 auto; }
+.footer-contact  {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 28px;
+    margin-bottom: 32px;
+}
+.footer-item h4 { color: var(--gold); margin-bottom: 10px; font-size: 15px; }
+.footer-item p  { font-size: 13px; line-height: 1.7; }
+.footer-item a  { color: var(--secondary); text-decoration: none; }
+.footer-item a:hover { text-decoration: underline; }
+.footer-bottom  { border-top: 1px solid rgba(255,255,255,.1); padding-top: 22px; font-size: 12px; }
+.footer-disclaimer {
+    background: rgba(255,193,7,.1);
+    border-left: 3px solid var(--gold);
+    padding: 16px;
+    margin-top: 22px;
+    border-radius: 4px;
+    font-size: 11px;
+    line-height: 1.7;
+    text-align: left;
+}
+.footer-disclaimer strong { color: var(--gold); }
+
+/* ============================================================
+   UTILITY
+============================================================ */
+.highlight { color: var(--accent); font-weight: 600; }
+.text-center { text-align: center; }
+.mt-10 { margin-top: 10px; }
+.mt-20 { margin-top: 20px; }
+.mb-20 { margin-bottom: 20px; }
+
+/* ============================================================
+   RESPONSIVE — 1100px (calculator layout collapses)
+============================================================ */
+@media (max-width: 1100px) {
+    .calculator-layout {
+        grid-template-columns: 1fr;
+    }
+    .summary-panel {
+        position: static;
+    }
+    .macro-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .calorie-display {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        text-align: left;
+        padding: 22px 26px;
+    }
+    .calorie-number { font-size: 52px; }
+    .daily-value-bar-wrap { flex: 1; }
+}
+
+/* ============================================================
+   RESPONSIVE — 1024px
+============================================================ */
+@media (max-width: 1024px) {
+    .container         { padding: 0 22px; }
+    .hero-section      { padding: 42px 22px; }
+    .toc-section       { padding: 34px 22px; }
+    .highlight-dark    { padding: 36px 26px; }
+    .cta-section       { padding: 44px 26px; }
+    .restaurant-footer { padding: 38px 22px; }
+}
+
+/* ============================================================
+   RESPONSIVE — 768px
+============================================================ */
+@media (max-width: 768px) {
+    .container { padding: 0 16px; }
+    .hero-section { padding: 34px 16px; }
+    .hero-section h1 { font-size: 24px; }
+    .hero-info {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        padding: 0;
+    }
+    .toc-section { padding: 28px 16px; }
+    .toc-grid    { grid-template-columns: repeat(auto-fit, minmax(145px, 1fr)); gap: 12px; }
+    .overview-grid,
+    .info-grid,
+    .how-to-grid { grid-template-columns: 1fr; gap: 16px; }
+    .macro-grid  { grid-template-columns: 1fr 1fr; }
+    .option-grid { grid-template-columns: 1fr; }
+    .option-grid.two-col { grid-template-columns: 1fr; }
+    .highlight-stats { grid-template-columns: repeat(2,1fr); gap: 14px; }
+    .cta-section   { padding: 34px 16px; }
+    .cta-buttons   { flex-direction: column; gap: 13px; }
+    .cta-button    { width: 100%; min-width: auto; text-align: center; }
+    .restaurant-footer { padding: 28px 16px; }
+    .footer-contact { grid-template-columns: 1fr; gap: 18px; }
+    .calorie-display { flex-direction: column; text-align: center; gap: 12px; }
+    .chart-filter-bar { gap: 8px; }
+    .chart-filter-btn { padding: 7px 14px; font-size: 12px; }
+    table { font-size: 12px; }
+    thead th, tbody td { padding: 10px; }
+}
+
+/* ============================================================
+   RESPONSIVE — 480px
+============================================================ */
+@media (max-width: 480px) {
+    body { font-size: 14px; }
+    .container { padding: 0 13px; }
+    .hero-section  { padding: 24px 13px; }
+    .hero-section h1 { font-size: 20px; }
+    .hero-info { grid-template-columns: 1fr 1fr; gap: 10px; }
+    .info-card { padding: 12px; font-size: 12px; }
+    section { margin-bottom: 38px; }
+    .toc-section   { padding: 18px 13px; }
+    .toc-grid      { grid-template-columns: 1fr 1fr; gap: 10px; }
+    .toc-item      { padding: 13px; }
+    .toc-item a    { font-size: 12px; }
+    .macro-grid    { grid-template-columns: 1fr 1fr; }
+    .calorie-number { font-size: 44px; }
+    .builder-step  { border-radius: 7px; }
+    .step-body     { padding: 14px; }
+    .step-header   { padding: 13px 14px; }
+    .highlight-dark { padding: 26px 16px; }
+    .highlight-stats { grid-template-columns: 1fr 1fr; gap: 12px; }
+    .cta-section   { padding: 24px 13px; margin: 40px 0; }
+    .restaurant-footer { padding: 22px 13px; }
+    .disclaimer-banner { font-size: 11px; padding: 10px 12px; }
+    .faq-question  { padding: 14px 16px; font-size: 13px; }
+    .faq-toggle    { font-size: 16px; }
+    .how-to-card   { padding: 22px 16px; }
+}
+
+/* ============================================================
+   RESPONSIVE — 360px
+============================================================ */
+@media (max-width: 360px) {
+    .container  { padding: 0 10px; }
+    .hero-section { padding: 20px 10px; }
+    .hero-section h1 { font-size: 18px; }
+    .hero-info  { grid-template-columns: 1fr 1fr; gap: 8px; }
+    .toc-grid   { grid-template-columns: 1fr; gap: 8px; }
+    .highlight-stats { grid-template-columns: 1fr; }
+    .macro-grid { grid-template-columns: 1fr 1fr; }
+}
+
+    </style>
+
+
+
+<!-- ============================================================
+</head>
+<body>
+DISCLAIMER BANNER (identical to homepage)
+============================================================ -->
+<div class="disclaimer-banner fw-breakout">
+    <strong>⚠️ IMPORTANT DISCLAIMER:</strong> This is an independent menu resource and guide created by <strong>moessouthwestgrillmenu.com</strong>. This is <strong>NOT</strong> the official Moe's Southwest Grill website. For official information, visit <a href="https://www.moes.com" target="_blank" rel="nofollow">www.moes.com</a> or use the <strong>Moe's official app</strong>.
+</div>
+
+
+<!-- ============================================================
+     HERO SECTION (adapted for Nutrition Tool)
+============================================================ -->
+<div class="hero-section fw-breakout">
+    <h1>🥗 Moe's Southwest Grill Nutrition Tool</h1>
+    <p class="hero-tagline">"Build Your Perfect Meal &amp; Track Every Macro Instantly."</p>
+    <p class="site-attribution">🌯 Free Nutrition Calculator by <strong>moessouthwestgrillmenu.com</strong></p>
+    <p class="hero-sub">Calories · Protein · Fat · Carbs · Sodium — Updated for 2026</p>
+
+    <div class="hero-info">
+        <div class="info-card">
+            <strong>🍽️ Items Tracked</strong>
+            40+ Menu Items
+        </div>
+        <div class="info-card">
+            <strong>📊 Nutrients Shown</strong>
+            5 Key Macros
+        </div>
+        <div class="info-card">
+            <strong>🔄 Updated</strong>
+            2026 Data
+        </div>
+        <div class="info-card">
+            <strong>✅ 100% Free</strong>
+            No Sign-Up Needed
+        </div>
+    </div>
+</div>
+
+
+<!-- ============================================================
+     TABLE OF CONTENTS
+============================================================ -->
+<div class="toc-section fw-breakout">
+    <h2>Explore the Nutrition Guide</h2>
+    <div class="toc-grid">
+        <div class="toc-item" onclick="document.getElementById('nutrition-tool').scrollIntoView({behavior:'smooth'})">
+            <a href="#nutrition-tool">🧮 Nutrition Calculator</a>
+        </div>
+        <div class="toc-item" onclick="document.getElementById('how-to-use').scrollIntoView({behavior:'smooth'})">
+            <a href="#how-to-use">📋 How To Use</a>
+        </div>
+        <div class="toc-item" onclick="document.getElementById('nutrition-chart').scrollIntoView({behavior:'smooth'})">
+            <a href="#nutrition-chart">📊 Nutrition Chart</a>
+        </div>
+        <div class="toc-item" onclick="document.getElementById('protein-guide').scrollIntoView({behavior:'smooth'})">
+            <a href="#protein-guide">💪 Protein Guide</a>
+        </div>
+        <div class="toc-item" onclick="document.getElementById('healthy-options').scrollIntoView({behavior:'smooth'})">
+            <a href="#healthy-options">🥗 Healthy Options</a>
+        </div>
+        <div class="toc-item" onclick="document.getElementById('dietary-info').scrollIntoView({behavior:'smooth'})">
+            <a href="#dietary-info">🌱 Dietary Info</a>
+        </div>
+        <div class="toc-item" onclick="document.getElementById('faq').scrollIntoView({behavior:'smooth'})">
+            <a href="#faq">❓ FAQs</a>
+        </div>
+        <div class="toc-item">
+            <a href="https://moessouthwestgrillmenu.com/">🏠 Homepage</a>
+        </div>
+        <div class="toc-item">
+            <a href="https://moessouthwestgrillmenu.com/about-us/">📖 About Us</a>
+        </div>
+        <div class="toc-item">
+            <a href="https://moessouthwestgrillmenu.com/contact-us/">📧 Contact Us</a>
+        </div>
+        <div class="toc-item">
+            <a href="https://moessouthwestgrillmenu.com/disclaimer/">⚠️ Disclaimer</a>
+        </div>
+        <div class="toc-item">
+            <a href="https://moessouthwestgrillmenu.com/privacy-policy/">🔒 Privacy Policy</a>
+        </div>
+    </div>
+</div>
+
+
+<!-- ============================================================
+     MAIN CONTENT CONTAINER
+============================================================ -->
+<div class="container">
+
+
+    <!-- =========================================================
+         SECTION 1: NUTRITION CALCULATOR TOOL
+    ========================================================== -->
+    <section id="nutrition-tool">
+        <h2>🧮 Moe's Southwest Grill Nutrition Calculator</h2>
+
+        <div class="tool-intro-box">
+            <p><strong>Build your Moe's meal step-by-step</strong> and watch the nutrition numbers update in real time. Select your base, protein, toppings, and sides — the calculator instantly displays your total <span class="highlight">Calories, Protein, Fat, Carbohydrates, and Sodium</span>.</p>
+            <p>📌 <strong>Note:</strong> Nutrition values are approximate averages based on publicly available Moe's data. Actual values may vary by location, serving size, and preparation. Always verify with your local Moe's for precise nutrition information.</p>
+        </div>
+
+        <!-- CALCULATOR LAYOUT -->
+        <div class="calculator-layout" id="calculator">
+
+            <!-- ====== LEFT: MEAL BUILDER ====== -->
+            <div class="builder-panel">
+
+                <!-- STEP 1: BASE / SHELL -->
+                <div class="builder-step">
+                    <div class="step-header">
+                        <div class="step-number">1</div>
+                        <div>
+                            <div class="step-title">🫓 Choose Your Base / Shell</div>
+                            <div class="step-subtitle">Select one — your meal starts here</div>
+                        </div>
+                    </div>
+                    <div class="step-body">
+                        <div class="option-grid">
+
+                            <div class="option-item">
+                                <input type="radio" name="base" id="base-burrito" value="base-burrito" data-default="true">
+                                <label class="option-label" for="base-burrito">
+                                    <div class="option-indicator"></div>
+                                    <span class="option-icon">🌯</span>
+                                    <div class="option-text">
+                                        <span class="option-name">Burrito (12" Flour Tortilla)</span>
+                                        <span class="option-cal">290 cal · 8g protein · 7g fat · 47g carbs</span>
+                                    </div>
+                                    <span class="option-badge gold">Popular</span>
+                                </label>
+                            </div>
+
+                            <div class="option-item">
+                                <input type="radio" name="base" id="base-bowl" value="base-bowl">
+                                <label class="option-label" for="base-bowl">
+                                    <div class="option-indicator"></div>
+                                    <span class="option-icon">🥣</span>
+                                    <div class="option-text">
+                                        <span class="option-name">Burrito Bowl (No Tortilla)</span>
+                                        <span class="option-cal">0 cal · gluten-friendly</span>
+                                    </div>
+                                    <span class="option-badge">Low Carb</span>
+                                </label>
+                            </div>
+
+                            <div class="option-item">
+                                <input type="radio" name="base" id="base-salad" value="base-salad">
+                                <label class="option-label" for="base-salad">
+                                    <div class="option-indicator"></div>
+                                    <span class="option-icon">🥗</span>
+                                    <div class="option-text">
+                                        <span class="option-name">Salad Bowl (Romaine Base)</span>
+                                        <span class="option-cal">15 cal · 1g protein · 0g fat · 2g carbs</span>
+                                    </div>
+                                    <span class="option-badge">Healthy</span>
+                                </label>
+                            </div>
+
+                            <div class="option-item">
+                                <input type="radio" name="base" id="base-soft-taco" value="base-soft-taco">
+                                <label class="option-label" for="base-soft-taco">
+                                    <div class="option-indicator"></div>
+                                    <span class="option-icon">🌮</span>
+                                    <div class="option-text">
+                                        <span class="option-name">Soft Taco Shell (per shell)</span>
+                                        <span class="option-cal">130 cal · 4g protein · 3g fat · 22g carbs</span>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div class="option-item">
+                                <input type="radio" name="base" id="base-crispy-taco" value="base-crispy-taco">
+                                <label class="option-label" for="base-crispy-taco">
+                                    <div class="option-indicator"></div>
+                                    <span class="option-icon">🌮</span>
+                                    <div class="option-text">
+                                        <span class="option-name">Crispy Corn Taco Shell (per shell)</span>
+                                        <span class="option-cal">70 cal · 1g protein · 3.5g fat · 9g carbs</span>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div class="option-item">
+                                <input type="radio" name="base" id="base-quesadilla" value="base-quesadilla">
+                                <label class="option-label" for="base-quesadilla">
+                                    <div class="option-indicator"></div>
+                                    <span class="option-icon">🫓</span>
+                                    <div class="option-text">
+                                        <span class="option-name">Quesadilla (Flour Tortilla)</span>
+                                        <span class="option-cal">260 cal · 7g protein · 6g fat · 42g carbs</span>
+                                    </div>
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STEP 2: PROTEIN -->
+                <div class="builder-step">
+                    <div class="step-header">
+                        <div class="step-number">2</div>
+                        <div>
+                            <div class="step-title">🥩 Choose Your Protein</div>
+                            <div class="step-subtitle">Select one protein (or none for veggie)</div>
+                        </div>
+                    </div>
+                    <div class="step-body">
+                        <div class="option-grid">
+
+                            <div class="option-item">
+                                <input type="radio" name="protein" id="protein-chicken" value="protein-chicken" data-default="true">
+                                <label class="option-label" for="protein-chicken">
+                                    <div class="option-indicator"></div>
+                                    <span class="option-icon">🍗</span>
+                                    <div class="option-text">
+                                        <span class="option-name">Adobo Chicken</span>
+                                        <span class="option-cal">190 cal · 28g protein · 7g fat · 3g carbs</span>
+                                    </div>
+                                    <span class="option-badge gold">#1</span>
+                                </label>
+                            </div>
+
+                            <div class="option-item">
+                                <input type="radio" name="protein" id="protein-steak" value="protein-steak">
+                                <label class="option-label" for="protein-steak">
+                                    <div class="option-indicator"></div>
+                                    <span class="option-icon">🥩</span>
+                                    <div class="option-text">
+                                        <span class="option-name">Sirloin Steak</span>
+                                        <span class="option-cal">200 cal · 26g protein · 10g fat · 1g carbs</span>
+                                    </div>
+                                    <span class="option-badge red">+$1–2</span>
+                                </label>
+                            </div>
+
+                            <div class="option-item">
+                                <input type="radio" name="protein" id="protein-beef" value="protein-beef">
+                                <label class="option-label" for="protein-beef">
+                                    <div class="option-indicator"></div>
+                                    <span class="option-icon">🍖</span>
+                                    <div class="option-text">
+                                        <span class="option-name">Ground Beef</span>
+                                        <span class="option-cal">210 cal · 20g protein · 14g fat · 2g carbs</span>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div class="option-item">
+                                <input type="radio" name="protein" id="protein-pork" value="protein-pork">
+                                <label class="option-label" for="protein-pork">
+                                    <div class="option-indicator"></div>
+                                    <span class="option-icon">🐷</span>
+                                    <div class="option-text">
+                                        <span class="option-name">Pulled Pork (Al Pastor)</span>
+                                        <span class="option-cal">210 cal · 22g protein · 12g fat · 2g carbs</span>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div class="option-item">
+                                <input type="radio" name="protein" id="protein-tofu" value="protein-tofu">
+                                <label class="option-label" for="protein-tofu">
+                                    <div class="option-indicator"></div>
+                                    <span class="option-icon">🌿</span>
+                                    <div class="option-text">
+                                        <span class="option-name">Tofu (Seasoned Grilled)</span>
+                                        <span class="option-cal">90 cal · 9g protein · 5g fat · 3g carbs</span>
+                                    </div>
+                                    <span class="option-badge">Vegan</span>
+                                </label>
+                            </div>
+
+                            <div class="option-item">
+                                <input type="radio" name="protein" id="protein-none" value="protein-none">
+                                <label class="option-label" for="protein-none">
+                                    <div class="option-indicator"></div>
+                                    <span class="option-icon">🥦</span>
+                                    <div class="option-text">
+                                        <span class="option-name">No Protein (Bean &amp; Veggie)</span>
+                                        <span class="option-cal">0 cal · plant-based</span>
+                                    </div>
+                                    <span class="option-badge">Vegan</span>
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STEP 3: RICE -->
+                <div class="builder-step">
+                    <div class="step-header">
+                        <div class="step-number">3</div>
+                        <div>
+                            <div class="step-title">🍚 Choose Your Rice</div>
+                            <div class="step-subtitle">Select one option</div>
+                        </div>
+                    </div>
+                    <div class="step-body">
+                        <div class="option-grid two-col">
+
+                            <div class="option-item">
+                                <input type="radio" name="rice" id="rice-seasoned" value="rice-seasoned" data-default="true">
+                                <label class="option-label" for="rice-seasoned">
+                                    <div class="option-indicator"></div>
+                                    <span class="option-icon">🍚</span>
+                                    <div class="option-text">
+                                        <span class="option-name">Seasoned Rice</span>
+                                        <span class="option-cal">170 cal · 3g protein · 1.5g fat · 36g carbs</span>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div class="option-item">
+                                <input type="radio" name="rice" id="rice-none" value="rice-none">
+                                <label class="option-label" for="rice-none">
+                                    <div class="option-indicator"></div>
+                                    <span class="option-icon">🚫</span>
+                                    <div class="option-text">
+                                        <span class="option-name">No Rice</span>
+                                        <span class="option-cal">0 cal · lower carb option</span>
+                                    </div>
+                                    <span class="option-badge">Low Carb</span>
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STEP 4: BEANS -->
+                <div class="builder-step">
+                    <div class="step-header">
+                        <div class="step-number">4</div>
+                        <div>
+                            <div class="step-title">🫘 Choose Your Beans</div>
+                            <div class="step-subtitle">Select one option</div>
+                        </div>
+                    </div>
+                    <div class="step-body">
+                        <div class="option-grid two-col">
+
+                            <div class="option-item">
+                                <input type="radio" name="beans" id="beans-black" value="beans-black" data-default="true">
+                                <label class="option-label" for="beans-black">
+                                    <div class="option-indicator"></div>
+                                    <span class="option-icon">🫘</span>
+                                    <div class="option-text">
+                                        <span class="option-name">Black Beans</span>
+                                        <span class="option-cal">90 cal · 6g protein · 1g fat · 17g carbs</span>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div class="option-item">
+                                <input type="radio" name="beans" id="beans-pinto" value="beans-pinto">
+                                <label class="option-label" for="beans-pinto">
+                                    <div class="option-indicator"></div>
+                                    <span class="option-icon">🫘</span>
+                                    <div class="option-text">
+                                        <span class="option-name">Pinto Beans</span>
+                                        <span class="option-cal">90 cal · 6g protein · 1g fat · 17g carbs</span>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div class="option-item">
+                                <input type="radio" name="beans" id="beans-none" value="beans-none">
+                                <label class="option-label" for="beans-none">
+                                    <div class="option-indicator"></div>
+                                    <span class="option-icon">🚫</span>
+                                    <div class="option-text">
+                                        <span class="option-name">No Beans</span>
+                                        <span class="option-cal">0 cal</span>
+                                    </div>
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STEP 5: CHEESE -->
+                <div class="builder-step">
+                    <div class="step-header">
+                        <div class="step-number">5</div>
+                        <div>
+                            <div class="step-title">🧀 Cheese</div>
+                            <div class="step-subtitle">Check to add shredded cheese</div>
+                        </div>
+                    </div>
+                    <div class="step-body">
+                        <div class="option-grid single-col">
+
+                            <div class="option-item">
+                                <input type="checkbox" name="cheese" id="cheese-shredded" value="cheese-shredded">
+                                <label class="option-label" for="cheese-shredded">
+                                    <div class="option-indicator square"></div>
+                                    <span class="option-icon">🧀</span>
+                                    <div class="option-text">
+                                        <span class="option-name">Shredded Cheese (Monterey Jack Blend)</span>
+                                        <span class="option-cal">100 cal · 6g protein · 8g fat · 0g carbs · 170mg sodium</span>
+                                    </div>
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STEP 6: SALSAS & SAUCES -->
+                <div class="builder-step">
+                    <div class="step-header">
+                        <div class="step-number">6</div>
+                        <div>
+                            <div class="step-title">🫙 Salsas &amp; Sauces</div>
+                            <div class="step-subtitle">Check all that apply</div>
+                        </div>
+                    </div>
+                    <div class="step-body">
+                        <div class="option-grid">
+
+                            <div class="option-item">
+                                <input type="checkbox" name="salsas" id="salsa-queso" value="salsa-queso">
+                                <label class="option-label" for="salsa-queso">
+                                    <div class="option-indicator square"></div>
+                                    <span class="option-icon">🧀</span>
+                                    <div class="option-text">
+                                        <span class="option-name">Moe's Famous Queso</span>
+                                        <span class="option-cal">120 cal · 5g protein · 9g fat · 4g carbs</span>
+                                    </div>
+                                    <span class="option-badge gold">Fan Fav</span>
+                                </label>
+                            </div>
+
+                            <div class="option-item">
+                                <input type="checkbox" name="salsas" id="salsa-pico" value="salsa-pico">
+                                <label class="option-label" for="salsa-pico">
+                                    <div class="option-indicator square"></div>
+                                    <span class="option-icon">🍅</span>
+                                    <div class="option-text">
+                                        <span class="option-name">Pico de Gallo</span>
+                                        <span class="option-cal">20 cal · 1g protein · 0g fat · 4g carbs</span>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div class="option-item">
+                                <input type="checkbox" name="salsas" id="salsa-corn" value="salsa-corn">
+                                <label class="option-label" for="salsa-corn">
+                                    <div class="option-indicator square"></div>
+                                    <span class="option-icon">🌽</span>
+                                    <div class="option-text">
+                                        <span class="option-name">Roasted Corn Salsa</span>
+                                        <span class="option-cal">60 cal · 2g protein · 1g fat · 12g carbs</span>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div class="option-item">
+                                <input type="checkbox" name="salsas" id="salsa-house" value="salsa-house">
+                                <label class="option-label" for="salsa-house">
+                                    <div class="option-indicator square"></div>
+                                    <span class="option-icon">🥫</span>
+                                    <div class="option-text">
+                                        <span class="option-name">House Salsa (Verde)</span>
+                                        <span class="option-cal">15 cal · 0g protein · 0g fat · 3g carbs</span>
+                                    </div>
+                                    <span class="option-badge">Low Cal</span>
+                                </label>
+                            </div>
+
+                            <div class="option-item">
+                                <input type="checkbox" name="salsas" id="salsa-mango" value="salsa-mango">
+                                <label class="option-label" for="salsa-mango">
+                                    <div class="option-indicator square"></div>
+                                    <span class="option-icon">🥭</span>
+                                    <div class="option-text">
+                                        <span class="option-name">Mango Salsa</span>
+                                        <span class="option-cal">45 cal · 0g protein · 0g fat · 11g carbs</span>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div class="option-item">
+                                <input type="checkbox" name="salsas" id="salsa-tomatillo" value="salsa-tomatillo">
+                                <label class="option-label" for="salsa-tomatillo">
+                                    <div class="option-indicator square"></div>
+                                    <span class="option-icon">🟢</span>
+                                    <div class="option-text">
+                                        <span class="option-name">Tomatillo Salsa</span>
+                                        <span class="option-cal">25 cal · 0g protein · 0g fat · 5g carbs</span>
+                                    </div>
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STEP 7: TOPPINGS -->
+                <div class="builder-step">
+                    <div class="step-header">
+                        <div class="step-number">7</div>
+                        <div>
+                            <div class="step-title">🥗 Toppings</div>
+                            <div class="step-subtitle">Check all that apply</div>
+                        </div>
+                    </div>
+                    <div class="step-body">
+                        <div class="option-grid">
+
+                            <div class="option-item">
+                                <input type="checkbox" name="toppings" id="top-lettuce" value="top-lettuce">
+                                <label class="option-label" for="top-lettuce">
+                                    <div class="option-indicator square"></div>
+                                    <span class="option-icon">🥬</span>
+                                    <div class="option-text">
+                                        <span class="option-name">Shredded Lettuce</span>
+                                        <span class="option-cal">5 cal · 0g protein · 0g fat · 1g carbs</span>
+                                    </div>
+                                    <span class="option-badge">Free</span>
+                                </label>
+                            </div>
+
+                            <div class="option-item">
+                                <input type="checkbox" name="toppings" id="top-sour-cream" value="top-sour-cream">
+                                <label class="option-label" for="top-sour-cream">
+                                    <div class="option-indicator square"></div>
+                                    <span class="option-icon">🥛</span>
+                                    <div class="option-text">
+                                        <span class="option-name">Sour Cream</span>
+                                        <span class="option-cal">60 cal · 1g protein · 5g fat · 2g carbs</span>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div class="option-item">
+                                <input type="checkbox" name="toppings" id="top-guacamole" value="top-guacamole">
+                                <label class="option-label" for="top-guacamole">
+                                    <div class="option-indicator square"></div>
+                                    <span class="option-icon">🥑</span>
+                                    <div class="option-text">
+                                        <span class="option-name">Fresh Guacamole</span>
+                                        <span class="option-cal">80 cal · 1g protein · 7g fat · 5g carbs</span>
+                                    </div>
+                                    <span class="option-badge red">+$2–3</span>
+                                </label>
+                            </div>
+
+                            <div class="option-item">
+                                <input type="checkbox" name="toppings" id="top-jalapeno" value="top-jalapeno">
+                                <label class="option-label" for="top-jalapeno">
+                                    <div class="option-indicator square"></div>
+                                    <span class="option-icon">🌶️</span>
+                                    <div class="option-text">
+                                        <span class="option-name">Jalapeños (Sliced)</span>
+                                        <span class="option-cal">5 cal · 0g protein · 0g fat · 1g carbs</span>
+                                    </div>
+                                    <span class="option-badge">Spicy</span>
+                                </label>
+                            </div>
+
+                            <div class="option-item">
+                                <input type="checkbox" name="toppings" id="top-cucumber" value="top-cucumber">
+                                <label class="option-label" for="top-cucumber">
+                                    <div class="option-indicator square"></div>
+                                    <span class="option-icon">🥒</span>
+                                    <div class="option-text">
+                                        <span class="option-name">Cucumbers</span>
+                                        <span class="option-cal">5 cal · 0g protein · 0g fat · 1g carbs</span>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div class="option-item">
+                                <input type="checkbox" name="toppings" id="top-pickled-onions" value="top-pickled-onions">
+                                <label class="option-label" for="top-pickled-onions">
+                                    <div class="option-indicator square"></div>
+                                    <span class="option-icon">🧅</span>
+                                    <div class="option-text">
+                                        <span class="option-name">Pickled Onions</span>
+                                        <span class="option-cal">10 cal · 0g protein · 0g fat · 2g carbs</span>
+                                    </div>
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STEP 8: SIDES -->
+                <div class="builder-step">
+                    <div class="step-header">
+                        <div class="step-number">8</div>
+                        <div>
+                            <div class="step-title">🍟 Sides &amp; Extras</div>
+                            <div class="step-subtitle">Check all that apply</div>
+                        </div>
+                    </div>
+                    <div class="step-body">
+                        <div class="option-grid">
+
+                            <div class="option-item">
+                                <input type="checkbox" name="sides" id="side-chips" value="side-chips">
+                                <label class="option-label" for="side-chips">
+                                    <div class="option-indicator square"></div>
+                                    <span class="option-icon">🍟</span>
+                                    <div class="option-text">
+                                        <span class="option-name">Tortilla Chips &amp; Salsa</span>
+                                        <span class="option-cal">430 cal · 5g protein · 24g fat · 52g carbs</span>
+                                    </div>
+                                    <span class="option-badge">FREE w/ entrée</span>
+                                </label>
+                            </div>
+
+                            <div class="option-item">
+                                <input type="checkbox" name="sides" id="side-queso-cup" value="side-queso-cup">
+                                <label class="option-label" for="side-queso-cup">
+                                    <div class="option-indicator square"></div>
+                                    <span class="option-icon">🧀</span>
+                                    <div class="option-text">
+                                        <span class="option-name">Queso Dip (Cup — Side)</span>
+                                        <span class="option-cal">120 cal · 5g protein · 9g fat · 4g carbs</span>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div class="option-item">
+                                <input type="checkbox" name="sides" id="side-guac-side" value="side-guac-side">
+                                <label class="option-label" for="side-guac-side">
+                                    <div class="option-indicator square"></div>
+                                    <span class="option-icon">🥑</span>
+                                    <div class="option-text">
+                                        <span class="option-name">Guacamole (Side Cup)</span>
+                                        <span class="option-cal">80 cal · 1g protein · 7g fat · 5g carbs</span>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div class="option-item">
+                                <input type="checkbox" name="sides" id="side-drink" value="side-drink">
+                                <label class="option-label" for="side-drink">
+                                    <div class="option-indicator square"></div>
+                                    <span class="option-icon">🥤</span>
+                                    <div class="option-text">
+                                        <span class="option-name">Fountain Drink (Medium)</span>
+                                        <span class="option-cal">200 cal · 0g protein · 0g fat · 54g carbs</span>
+                                    </div>
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- /builder-panel -->
+
+
+            <!-- ====== RIGHT: NUTRITION SUMMARY ====== -->
+            <div class="summary-panel">
+
+                <!-- CALORIES -->
+                <div class="calorie-display">
+                    <div>
+                        <div class="calorie-label">🔥 Total Calories</div>
+                        <div class="calorie-number" id="total-calories">480</div>
+                        <div class="calorie-unit">kilocalories (kcal)</div>
+                    </div>
+                    <div class="daily-value-bar-wrap">
+                        <div class="daily-value-label">
+                            <span>0%</span>
+                            <span id="cal-dv-label">24% of 2,000 kcal daily value</span>
+                            <span>100%</span>
+                        </div>
+                        <div class="daily-value-bar-bg">
+                            <div class="daily-value-bar-fill" id="cal-dv-bar" style="width:24%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MACROS -->
+                <div class="macro-grid">
+                    <div class="macro-card protein">
+                        <div class="macro-icon">💪</div>
+                        <div class="macro-value" id="protein-val">37g</div>
+                        <div class="macro-name">Protein</div>
+                        <div class="macro-dv" id="protein-dv">74% DV</div>
+                        <div class="macro-bar-bg"><div class="macro-bar-fill" id="protein-bar" style="width:74%"></div></div>
+                    </div>
+                    <div class="macro-card fat">
+                        <div class="macro-icon">🧈</div>
+                        <div class="macro-value" id="fat-val">15.5g</div>
+                        <div class="macro-name">Fat</div>
+                        <div class="macro-dv" id="fat-dv">20% DV</div>
+                        <div class="macro-bar-bg"><div class="macro-bar-fill" id="fat-bar" style="width:20%"></div></div>
+                    </div>
+                    <div class="macro-card carbs">
+                        <div class="macro-icon">🌾</div>
+                        <div class="macro-value" id="carbs-val">103g</div>
+                        <div class="macro-name">Carbs</div>
+                        <div class="macro-dv" id="carbs-dv">37% DV</div>
+                        <div class="macro-bar-bg"><div class="macro-bar-fill" id="carbs-bar" style="width:37%"></div></div>
+                    </div>
+                    <div class="macro-card sodium">
+                        <div class="macro-icon">🧂</div>
+                        <div class="macro-value" id="sodium-val">1790mg</div>
+                        <div class="macro-name">Sodium</div>
+                        <div class="macro-dv" id="sodium-dv">78% DV</div>
+                        <div class="macro-bar-bg"><div class="macro-bar-fill" id="sodium-bar" style="width:78%"></div></div>
+                    </div>
+                </div>
+
+                <!-- ORDER SUMMARY -->
+                <div class="order-summary-box">
+                    <div class="order-summary-header">🛒 Your Order Summary</div>
+                    <div class="order-summary-body" id="order-summary-body">
+                        <!-- Dynamically populated by JS -->
+                        <div class="order-empty">
+                            <span class="order-empty-icon">🌮</span>
+                            Select items on the left to build your meal!
+                        </div>
+                    </div>
+                    <div class="order-summary-total">
+                        <span>Total</span>
+                        <span id="order-total-cal">480 kcal</span>
+                    </div>
+                </div>
+
+                <!-- RESET -->
+                <button class="reset-btn" id="reset-btn" onclick="resetMeal()">🔄 Reset &amp; Start Over</button>
+                <p class="nutrition-note">* Daily values based on a 2,000 calorie diet. Nutrition values are estimates based on typical Moe's serving sizes and may vary by location.</p>
+
+            </div><!-- /summary-panel -->
+
+        </div><!-- /calculator-layout -->
+
+    </section>
+
+
+    <!-- =========================================================
+         SECTION 2: HOW TO USE
+    ========================================================== -->
+    <section id="how-to-use">
+        <h2>📋 How to Use the Moe's Nutrition Calculator</h2>
+
+        <p style="font-size:15px; line-height:1.85; color:var(--text-dark); margin-bottom:28px;">
+            Our <span class="highlight">Moe's Nutrition Calculator</span> is designed to be simple, fast, and accurate. Follow these steps to build your custom meal and instantly see the full nutritional breakdown. Whether you're tracking macros, watching calories, or just curious about what's in your Homewrecker Burrito — we've got you covered.
+        </p>
+
+        <div class="how-to-grid">
+            <div class="how-to-card">
+                <div class="how-to-number">1</div>
+                <span class="how-to-icon">🫓</span>
+                <h4>Choose Your Base or Shell</h4>
+                <p>Start by selecting the foundation of your meal. Options include a 12" Burrito Tortilla, Burrito Bowl (no tortilla), Salad Bowl, Soft Taco Shell, or Crispy Corn Shell. This sets the starting calorie count for your order.</p>
+            </div>
+            <div class="how-to-card">
+                <div class="how-to-number">2</div>
+                <span class="how-to-icon">🥩</span>
+                <h4>Select Your Protein</h4>
+                <p>Pick one protein from the list — Adobo Chicken, Sirloin Steak, Ground Beef, Pulled Pork, Tofu, or no protein. This is the biggest driver of your protein and calorie count. Adobo Chicken offers the best protein-to-calorie ratio.</p>
+            </div>
+            <div class="how-to-card">
+                <div class="how-to-number">3</div>
+                <span class="how-to-icon">🍚</span>
+                <h4>Add Rice and Beans</h4>
+                <p>Choose whether to include Seasoned Rice and which beans you'd like — Black Beans, Pinto Beans, or none. These add primarily carbohydrates and fiber, plus some additional protein. Skip rice for a lower-carb meal.</p>
+            </div>
+            <div class="how-to-card">
+                <div class="how-to-number">4</div>
+                <span class="how-to-icon">🧀</span>
+                <h4>Add Cheese, Salsas &amp; Toppings</h4>
+                <p>Toggle cheese on or off, then check any salsas and toppings you want. Moe's Famous Queso is the most calorie-dense sauce (120 cal). Most free toppings like lettuce, pico, and jalapeños add very few calories.</p>
+            </div>
+            <div class="how-to-card">
+                <div class="how-to-number">5</div>
+                <span class="how-to-icon">🍟</span>
+                <h4>Select Sides &amp; Extras</h4>
+                <p>Add sides like Tortilla Chips &amp; Salsa, a queso cup, or a fountain drink. Note that the classic Tortilla Chips &amp; Salsa combo adds 430 calories to your total and comes FREE with every entrée at Moe's.</p>
+            </div>
+            <div class="how-to-card">
+                <div class="how-to-number">6</div>
+                <span class="how-to-icon">📊</span>
+                <h4>View Your Nutrition Summary</h4>
+                <p>The right panel (or below on mobile) updates in real time with your total Calories, Protein, Fat, Carbs, and Sodium. You'll also see a percentage of the recommended daily value and a scrollable Order Summary list.</p>
+            </div>
+            <div class="how-to-card">
+                <div class="how-to-number">7</div>
+                <span class="how-to-icon">📋</span>
+                <h4>Review the Order Summary</h4>
+                <p>Your Order Summary list shows every selected item alongside its calorie contribution. This makes it easy to identify which components are adding the most calories to your meal so you can adjust as needed.</p>
+            </div>
+            <div class="how-to-card">
+                <div class="how-to-number">8</div>
+                <span class="how-to-icon">🔄</span>
+                <h4>Reset &amp; Try a New Combination</h4>
+                <p>Tap the "Reset &amp; Start Over" button at any time to clear all selections and begin fresh. Experiment with different proteins, skip the cheese, or swap to a salad bowl to discover your ideal low-calorie Moe's meal.</p>
+            </div>
+        </div>
+
+        <div class="callout-box" style="margin-top:30px;">
+            <h4>💡 Pro Tip: The Healthiest Moe's Meal Possible</h4>
+            <p>Want the lowest-calorie Moe's meal? Choose a <strong>Salad Bowl or Burrito Bowl</strong> (no tortilla), add <strong>Adobo Chicken</strong> (best protein ratio), include <strong>Black Beans</strong> (fiber-rich), skip the rice, add <strong>House Salsa</strong> (15 cal) and <strong>Pico de Gallo</strong> (20 cal), top with <strong>Lettuce and Jalapeños</strong> — and skip the chips. Your total could be as low as <strong>~320–350 calories</strong> with over <strong>35g of protein</strong>. A genuinely nutritious fast-casual meal!</p>
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         SECTION 3: NUTRITION CHART
+    ========================================================== -->
+    <section id="nutrition-chart">
+        <h2>📊 Moe's Nutrition Chart — Complete Menu Data</h2>
+
+        <p style="font-size:15px; line-height:1.85; color:var(--text-dark); margin-bottom:22px;">
+            The comprehensive Moe's nutrition chart below covers every major menu component with detailed macro breakdowns. Use the category filters to jump to a specific section. All values are approximate averages for a standard serving size.
+        </p>
+
+        <!-- Filter Buttons -->
+        <div class="chart-filter-bar">
+            <button class="chart-filter-btn active" id="filter-all" onclick="filterChart('all', this)">All Items</button>
+            <button class="chart-filter-btn" id="filter-bases" onclick="filterChart('bases', this)">🫓 Bases</button>
+            <button class="chart-filter-btn" id="filter-proteins" onclick="filterChart('proteins', this)">🥩 Proteins</button>
+            <button class="chart-filter-btn" id="filter-grains" onclick="filterChart('grains', this)">🍚 Rice &amp; Beans</button>
+            <button class="chart-filter-btn" id="filter-salsas" onclick="filterChart('salsas', this)">🫙 Salsas</button>
+            <button class="chart-filter-btn" id="filter-toppings" onclick="filterChart('toppings', this)">🥗 Toppings</button>
+            <button class="chart-filter-btn" id="filter-sides" onclick="filterChart('sides', this)">🍟 Sides</button>
+        </div>
+
+        <div class="table-wrapper">
+            <table id="nutrition-table">
+                <thead>
+                    <tr>
+                        <th>Menu Item</th>
+                        <th>Calories</th>
+                        <th>Protein (g)</th>
+                        <th>Fat (g)</th>
+                        <th>Carbs (g)</th>
+                        <th>Sodium (mg)</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <!-- BASES -->
+                    <tr class="cat-row" data-cat="bases"><td colspan="6">🫓 BASES &amp; SHELLS</td></tr>
+                    <tr data-cat="bases"><td>Burrito (12" Flour Tortilla)</td><td class="cal-cell med-cal">290</td><td>8</td><td>7</td><td>47</td><td>560</td></tr>
+                    <tr data-cat="bases"><td>Burrito Bowl (No Tortilla)</td><td class="cal-cell low-cal">0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                    <tr data-cat="bases"><td>Salad Bowl (Romaine Base)</td><td class="cal-cell low-cal">15</td><td>1</td><td>0</td><td>2</td><td>10</td></tr>
+                    <tr data-cat="bases"><td>Soft Taco Shell (per shell)</td><td class="cal-cell low-cal">130</td><td>4</td><td>3</td><td>22</td><td>250</td></tr>
+                    <tr data-cat="bases"><td>Crispy Corn Taco Shell (per shell)</td><td class="cal-cell low-cal">70</td><td>1</td><td>3.5</td><td>9</td><td>110</td></tr>
+                    <tr data-cat="bases"><td>Quesadilla (Flour Tortilla)</td><td class="cal-cell med-cal">260</td><td>7</td><td>6</td><td>42</td><td>490</td></tr>
+
+                    <!-- PROTEINS -->
+                    <tr class="cat-row" data-cat="proteins"><td colspan="6">🥩 PROTEINS</td></tr>
+                    <tr data-cat="proteins"><td>Adobo Chicken (grilled, marinated)</td><td class="cal-cell low-cal">190</td><td>28</td><td>7</td><td>3</td><td>560</td></tr>
+                    <tr data-cat="proteins"><td>Sirloin Steak (seasoned, grilled)</td><td class="cal-cell low-cal">200</td><td>26</td><td>10</td><td>1</td><td>530</td></tr>
+                    <tr data-cat="proteins"><td>Ground Beef (Southwest-spiced)</td><td class="cal-cell med-cal">210</td><td>20</td><td>14</td><td>2</td><td>480</td></tr>
+                    <tr data-cat="proteins"><td>Pulled Pork / Al Pastor</td><td class="cal-cell med-cal">210</td><td>22</td><td>12</td><td>2</td><td>430</td></tr>
+                    <tr data-cat="proteins"><td>Tofu (seasoned, grilled)</td><td class="cal-cell low-cal">90</td><td>9</td><td>5</td><td>3</td><td>250</td></tr>
+                    <tr data-cat="proteins"><td>No Protein</td><td class="cal-cell low-cal">0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+
+                    <!-- RICE & BEANS -->
+                    <tr class="cat-row" data-cat="grains"><td colspan="6">🍚 RICE &amp; BEANS</td></tr>
+                    <tr data-cat="grains"><td>Seasoned Rice</td><td class="cal-cell low-cal">170</td><td>3</td><td>1.5</td><td>36</td><td>530</td></tr>
+                    <tr data-cat="grains"><td>Black Beans</td><td class="cal-cell low-cal">90</td><td>6</td><td>1</td><td>17</td><td>350</td></tr>
+                    <tr data-cat="grains"><td>Pinto Beans</td><td class="cal-cell low-cal">90</td><td>6</td><td>1</td><td>17</td><td>310</td></tr>
+                    <tr data-cat="grains"><td>Shredded Cheese (Monterey Jack Blend)</td><td class="cal-cell low-cal">100</td><td>6</td><td>8</td><td>0</td><td>170</td></tr>
+
+                    <!-- SALSAS & SAUCES -->
+                    <tr class="cat-row" data-cat="salsas"><td colspan="6">🫙 SALSAS &amp; SAUCES</td></tr>
+                    <tr data-cat="salsas"><td>Moe's Famous Queso (in-meal serving)</td><td class="cal-cell low-cal">120</td><td>5</td><td>9</td><td>4</td><td>440</td></tr>
+                    <tr data-cat="salsas"><td>Pico de Gallo</td><td class="cal-cell low-cal">20</td><td>1</td><td>0</td><td>4</td><td>160</td></tr>
+                    <tr data-cat="salsas"><td>Roasted Corn Salsa</td><td class="cal-cell low-cal">60</td><td>2</td><td>1</td><td>12</td><td>120</td></tr>
+                    <tr data-cat="salsas"><td>House Salsa / Salsa Verde</td><td class="cal-cell low-cal">15</td><td>0</td><td>0</td><td>3</td><td>135</td></tr>
+                    <tr data-cat="salsas"><td>Mango Salsa</td><td class="cal-cell low-cal">45</td><td>0</td><td>0</td><td>11</td><td>75</td></tr>
+                    <tr data-cat="salsas"><td>Tomatillo Salsa</td><td class="cal-cell low-cal">25</td><td>0</td><td>0</td><td>5</td><td>140</td></tr>
+
+                    <!-- TOPPINGS -->
+                    <tr class="cat-row" data-cat="toppings"><td colspan="6">🥗 TOPPINGS</td></tr>
+                    <tr data-cat="toppings"><td>Shredded Lettuce</td><td class="cal-cell low-cal">5</td><td>0</td><td>0</td><td>1</td><td>5</td></tr>
+                    <tr data-cat="toppings"><td>Sour Cream</td><td class="cal-cell low-cal">60</td><td>1</td><td>5</td><td>2</td><td>25</td></tr>
+                    <tr data-cat="toppings"><td>Fresh Guacamole</td><td class="cal-cell low-cal">80</td><td>1</td><td>7</td><td>5</td><td>115</td></tr>
+                    <tr data-cat="toppings"><td>Jalapeños (sliced)</td><td class="cal-cell low-cal">5</td><td>0</td><td>0</td><td>1</td><td>95</td></tr>
+                    <tr data-cat="toppings"><td>Cucumbers</td><td class="cal-cell low-cal">5</td><td>0</td><td>0</td><td>1</td><td>0</td></tr>
+                    <tr data-cat="toppings"><td>Pickled Onions</td><td class="cal-cell low-cal">10</td><td>0</td><td>0</td><td>2</td><td>80</td></tr>
+
+                    <!-- SIDES -->
+                    <tr class="cat-row" data-cat="sides"><td colspan="6">🍟 SIDES &amp; EXTRAS</td></tr>
+                    <tr data-cat="sides"><td>Tortilla Chips &amp; Salsa (full serving)</td><td class="cal-cell high-cal">430</td><td>5</td><td>24</td><td>52</td><td>280</td></tr>
+                    <tr data-cat="sides"><td>Queso Dip Cup (side serving)</td><td class="cal-cell low-cal">120</td><td>5</td><td>9</td><td>4</td><td>440</td></tr>
+                    <tr data-cat="sides"><td>Queso Dip Bowl (large side)</td><td class="cal-cell med-cal">240</td><td>10</td><td>18</td><td>8</td><td>880</td></tr>
+                    <tr data-cat="sides"><td>Guacamole Side Cup</td><td class="cal-cell low-cal">80</td><td>1</td><td>7</td><td>5</td><td>115</td></tr>
+                    <tr data-cat="sides"><td>Fountain Drink (Medium ~22oz)</td><td class="cal-cell med-cal">200</td><td>0</td><td>0</td><td>54</td><td>35</td></tr>
+                    <tr data-cat="sides"><td>Water / Unsweetened Tea</td><td class="cal-cell low-cal">0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="callout-box" style="margin-top:28px;">
+            <h4>📌 Important Nutrition Disclaimer</h4>
+            <p>All nutrition values in this chart are approximate estimates based on typical Moe's menu ingredient data. Actual values at your local Moe's may vary based on portion size, preparation method, regional recipes, and ingredient sourcing. For the most accurate and up-to-date nutrition information, visit <strong>www.moes.com</strong> or consult your local Moe's location directly.</p>
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         SECTION 4: PROTEIN GUIDE
+    ========================================================== -->
+    <section id="protein-guide">
+        <h2>💪 Moe's Protein Guide — Best Choices for Every Goal</h2>
+
+        <p style="font-size:15px; line-height:1.85; color:var(--text-dark); margin-bottom:28px;">
+            Protein is the cornerstone of a satisfying Moe's meal — and thankfully, Moe's offers excellent protein options for every dietary goal. Whether you're focused on maximizing muscle gains, minimizing calories, or following a plant-based lifestyle, here's everything you need to know about each protein at Moe's.
+        </p>
+
+        <div class="overview-grid">
+            <div class="overview-card">
+                <h3>🏆 Best for High Protein: Adobo Chicken</h3>
+                <p>With <strong>28 grams of protein at just 190 calories</strong>, Moe's Adobo Chicken delivers the best protein-to-calorie ratio of any protein on the menu. Marinated and grilled to order, it's also the most popular protein among regular Moe's diners. An exceptional choice for anyone tracking macros or trying to maximize lean protein.</p>
+            </div>
+            <div class="overview-card">
+                <h3>🥩 Best for Bold Flavor: Sirloin Steak</h3>
+                <p>Moe's Sirloin Steak offers <strong>26g of protein and 200 calories</strong>, with a slightly higher fat content (10g) that contributes to its richer, beefier flavor profile. It carries a small upcharge (+$1–$2) but is widely considered worth it. Pairs exceptionally well with guacamole and pico de gallo.</p>
+            </div>
+            <div class="overview-card">
+                <h3>🐷 Best for Richness: Pulled Pork (Al Pastor)</h3>
+                <p>Moe's slow-braised Pulled Pork provides <strong>22g of protein at 210 calories</strong> with a deeply smoky, tender flavor. At 12g of fat, it's richer than chicken or steak but offers a distinctly satisfying Southwest flavor. A great choice for those who prefer more complex meat flavors.</p>
+            </div>
+            <div class="overview-card">
+                <h3>🍖 Classic Hearty Option: Ground Beef</h3>
+                <p>Seasoned in classic Southwest spices, Ground Beef brings <strong>20g of protein at 210 calories</strong> but has the highest fat content among the proteins at 14g. The familiar, savory flavor is a family favorite and great for traditional burrito builds with cheese and sour cream.</p>
+            </div>
+            <div class="overview-card">
+                <h3>🌿 Best Plant-Based: Tofu</h3>
+                <p>Moe's seasoned Tofu is the ideal vegan protein option, delivering <strong>9g of protein at just 90 calories</strong>. It's the lowest-calorie protein on the menu and absorbs the bold Southwest seasonings beautifully. Combine with The Edgy Veggie build — no cheese, all veggie toppings — for a genuinely nutritious plant-based meal.</p>
+            </div>
+            <div class="overview-card">
+                <h3>📊 Protein Comparison Summary</h3>
+                <p>Quick protein rankings by efficiency:</p>
+                <ul>
+                    <li>🥇 Adobo Chicken — 28g / 190 cal</li>
+                    <li>🥈 Sirloin Steak — 26g / 200 cal</li>
+                    <li>🥉 Pulled Pork — 22g / 210 cal</li>
+                    <li>4️⃣ Ground Beef — 20g / 210 cal</li>
+                    <li>5️⃣ Tofu — 9g / 90 cal</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="highlight-dark">
+            <h3>🌮 The Highest-Protein Moe's Meal You Can Build</h3>
+            <p>Want to maximize protein at Moe's? Order a <strong>Burrito Bowl with Adobo Chicken, Black Beans, Shredded Cheese, Seasoned Rice, and Moe's Queso</strong>. This combination packs an impressive macro profile that supports muscle building while staying under a reasonable calorie target.</p>
+            <div class="highlight-stats">
+                <div class="highlight-stat">
+                    <div class="number">~53g</div>
+                    <div class="label">Total Protein</div>
+                </div>
+                <div class="highlight-stat">
+                    <div class="number">~730</div>
+                    <div class="label">Total Calories</div>
+                </div>
+                <div class="highlight-stat">
+                    <div class="number">~26g</div>
+                    <div class="label">Total Fat</div>
+                </div>
+                <div class="highlight-stat">
+                    <div class="number">~67g</div>
+                    <div class="label">Total Carbs</div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         SECTION 5: HEALTHY OPTIONS
+    ========================================================== -->
+    <section id="healthy-options">
+        <h2>🥗 Healthy Options at Moe's Southwest Grill</h2>
+
+        <p style="font-size:15px; line-height:1.85; color:var(--text-dark); margin-bottom:28px;">
+            Moe's isn't just about indulgent burritos — the assembly-line model gives health-conscious diners <span class="highlight">remarkable control</span> over their calorie and macro intake. With smart choices, you can enjoy a satisfying, restaurant-quality meal that fits into virtually any dietary plan.
+        </p>
+
+        <div class="info-grid">
+            <div class="info-card-lg">
+                <h4>🔥 Best Low-Calorie Combinations</h4>
+                <p>The key to a low-calorie Moe's meal is choosing the right base and skipping the heavy add-ons. Here are the best low-calorie meal builds:</p>
+                <ul>
+                    <li><strong>Salad Bowl + Adobo Chicken + Pico + Lettuce + Jalapeños:</strong> ~225 cal</li>
+                    <li><strong>Burrito Bowl + Tofu + Black Beans + House Salsa:</strong> ~195 cal</li>
+                    <li><strong>Bowl + Chicken + Rice + Pico + Lettuce:</strong> ~380 cal</li>
+                    <li><strong>Salad Bowl + Steak + Guacamole + Pico + No Rice:</strong> ~305 cal</li>
+                </ul>
+            </div>
+            <div class="info-card-lg">
+                <h4>🌾 Low-Carb / Keto-Friendly Choices</h4>
+                <p>For low-carb or ketogenic dieters, Moe's is a surprisingly great option. Simply avoid the tortilla, rice, and beans — and watch the carbs drop dramatically:</p>
+                <ul>
+                    <li>Choose a <strong>Burrito Bowl or Salad Bowl</strong> — zero tortilla carbs</li>
+                    <li>Skip the rice (saves 36g carbs)</li>
+                    <li>Skip the beans (saves 17g carbs)</li>
+                    <li>Add protein + cheese + guacamole + sour cream</li>
+                    <li>Result: <strong>Under 15g net carbs</strong> for your meal</li>
+                </ul>
+            </div>
+            <div class="info-card-lg">
+                <h4>🏃 Best Choices for Weight Management</h4>
+                <p>If you're watching your weight, Moe's gives you full control. General guidelines for a balanced, weight-conscious Moe's order:</p>
+                <ul>
+                    <li>Use a <strong>bowl instead of a tortilla</strong> (saves ~290 cal)</li>
+                    <li>Choose <strong>Adobo Chicken or Tofu</strong> as your protein</li>
+                    <li>Add <strong>Black Beans</strong> for fiber that keeps you full</li>
+                    <li>Skip sour cream and extra queso (saves ~120–180 cal)</li>
+                    <li>Drink water instead of a fountain drink (saves ~200 cal)</li>
+                </ul>
+            </div>
+            <div class="info-card-lg">
+                <h4>💪 Best High-Protein, Low-Fat Builds</h4>
+                <p>Athletes and fitness enthusiasts can optimize Moe's for maximum protein with minimal fat:</p>
+                <ul>
+                    <li><strong>Base:</strong> Burrito Bowl (0 cal, 0 fat)</li>
+                    <li><strong>Protein:</strong> Adobo Chicken (28g protein, 7g fat)</li>
+                    <li><strong>Beans:</strong> Black Beans (6g protein, 1g fat)</li>
+                    <li><strong>Sauces:</strong> Pico de Gallo + House Salsa</li>
+                    <li><strong>Skip:</strong> Rice, sour cream, extra cheese</li>
+                    <li><strong>Result:</strong> ~34g protein / ~8g total fat / ~390 cal</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="callout-box">
+            <h4>🍟 The Calorie Trap: Chips &amp; Queso</h4>
+            <p>Moe's signature free Tortilla Chips &amp; Salsa adds <strong>430 calories and 24g of fat</strong> to your meal — before you've even touched your main dish. If you're watching calories, consider skipping or sharing the chips. Adding a cup of Queso on the side brings an additional 120 calories. These "free" extras can account for nearly half your daily calorie budget if you're not careful!</p>
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         SECTION 6: DIETARY INFO
+    ========================================================== -->
+    <section id="dietary-info">
+        <h2>🌱 Dietary &amp; Allergen Information at Moe's</h2>
+
+        <p style="font-size:15px; line-height:1.85; color:var(--text-dark); margin-bottom:28px;">
+            Moe's Southwest Grill prides itself on catering to a wide range of dietary preferences and restrictions. The build-your-own model makes it easy to adapt any meal to fit <span class="highlight">vegetarian, vegan, gluten-sensitive, and dairy-free</span> requirements. Here's a comprehensive guide to eating at Moe's with dietary considerations in mind.
+        </p>
+
+        <div class="overview-grid">
+            <div class="overview-card">
+                <h3>🌿 Vegetarian Options</h3>
+                <p>Moe's is extremely vegetarian-friendly. Simply choose <strong>Tofu or No Protein</strong>, pair with Black Beans or Pinto Beans, add Seasoned Rice, and load up on vegetable toppings. The iconic <strong>Edgy Veggie Burrito</strong> is Moe's official vegetarian flagship item, and it's genuinely delicious — even non-vegetarians love it.</p>
+            </div>
+            <div class="overview-card">
+                <h3>🥦 Vegan Options</h3>
+                <p>Moe's can absolutely accommodate vegan guests. Choose <strong>Tofu or No Protein</strong>, skip cheese and sour cream, opt for a Burrito Bowl or Salad Bowl, and select plant-based toppings only. House Salsa, Pico de Gallo, Mango Salsa, and most vegetable toppings are vegan-friendly. Confirm with staff for the latest ingredient info.</p>
+            </div>
+            <div class="overview-card">
+                <h3>🌾 Gluten-Sensitive Options</h3>
+                <p>While Moe's does not operate a certified gluten-free kitchen, several components are naturally gluten-free. Choose a <strong>Burrito Bowl or Salad Bowl</strong> (no tortilla), select proteins, beans, and most toppings. The flour tortilla shells contain gluten. Always inform staff of your sensitivity so they can take precautions.</p>
+            </div>
+            <div class="overview-card">
+                <h3>🥛 Dairy-Free Options</h3>
+                <p>Many Moe's menu items are naturally dairy-free. Skip the <strong>Shredded Cheese, Sour Cream, and Queso</strong> — all three are dairy-based — and your bowl or salad can be completely dairy-free. The proteins, rice, beans, most salsas, and vegetable toppings do not contain dairy.</p>
+            </div>
+            <div class="overview-card">
+                <h3>🥩 High-Protein / Paleo Builds</h3>
+                <p>For paleo or high-protein diets, choose a <strong>Salad Bowl or Burrito Bowl</strong>, load up on Adobo Chicken or Steak, skip the rice and tortilla (grains), skip the beans (legumes), and add guacamole, pico, and lettuce. This delivers an excellent protein-to-carb ratio with whole food ingredients.</p>
+            </div>
+            <div class="overview-card">
+                <h3>⚠️ Common Allergens at Moe's</h3>
+                <p>Key allergens present in Moe's menu items:</p>
+                <p><strong>Gluten:</strong> Flour tortillas, some seasonings<br>
+                <strong>Dairy:</strong> Cheese, sour cream, queso<br>
+                <strong>Soy:</strong> Tofu<br>
+                <strong>Tree Nuts:</strong> Check specific items<br>
+                <strong>Sesame:</strong> Some sauces may contain sesame</p>
+                <p style="margin-top:8px; font-size:12px;">Always disclose allergies to Moe's staff before ordering. Moe's kitchens are not allergen-free environments.</p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- =========================================================
+         CTA SECTION
+    ========================================================== -->
+    <section>
+        <div class="cta-section">
+            <h2>🌮 Explore the Full Moe's Menu</h2>
+            <p>Check out our complete Moe's Southwest Grill Menu Guide for full pricing, dish descriptions, top 10 rankings, reviews, and everything you need to know before your next visit.</p>
+            <div class="cta-buttons">
+                <a href="https://moessouthwestgrillmenu.com/" class="cta-button">🏠 View Full Menu Guide</a>
+                <a href="https://www.moes.com" class="cta-button secondary" target="_blank" rel="nofollow">🌐 Visit Official Moe's Site</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =========================================================
+         SECTION 7: FAQ
+    ========================================================== -->
+    <section id="faq">
+        <h2>❓ Frequently Asked Questions — Moe's Nutrition</h2>
+
+        <p style="font-size:15px; line-height:1.85; color:var(--text-dark); margin-bottom:28px;">
+            Got questions about Moe's nutrition? Here are the most frequently asked questions from our readers, answered in detail. Use this section alongside the nutrition calculator above for a complete picture of what you're eating.
+        </p>
+
+        <div class="faq-container">
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    How many calories are in a Moe's Homewrecker Burrito?
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>The <strong>Moe's Homewrecker Burrito</strong> is the chain's most iconic item, and calorie counts vary based on your protein choice and toppings. As a general guide:</p>
+                    <ul>
+                        <li>With Adobo Chicken, rice, black beans, cheese, sour cream, pico &amp; guacamole: <strong>~920–1,050 calories</strong></li>
+                        <li>With Sirloin Steak, same build: <strong>~950–1,080 calories</strong></li>
+                        <li>With Ground Beef, same build: <strong>~950–1,090 calories</strong></li>
+                    </ul>
+                    <p>The Homewrecker is designed to be a fully loaded meal, so it's on the higher end of the calorie spectrum. Opt for the <strong>Homewrecker Bowl</strong> (no tortilla) to save approximately 290 calories.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    What is the lowest-calorie meal at Moe's Southwest Grill?
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>You can build a surprisingly low-calorie meal at Moe's with smart choices. The lowest-calorie build possible:</p>
+                    <ul>
+                        <li><strong>Salad Bowl</strong> (15 cal) + <strong>Tofu</strong> (90 cal) + <strong>House Salsa</strong> (15 cal) + <strong>Pico de Gallo</strong> (20 cal) + <strong>Lettuce</strong> (5 cal) = <strong>~145 calories</strong></li>
+                    </ul>
+                    <p>A more satisfying but still low-calorie option: <strong>Burrito Bowl + Adobo Chicken + Black Beans + Pico + House Salsa + Lettuce = ~320 calories</strong> with 35g of protein. This is one of the best value nutrition meals available in the fast-casual space.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    How many calories are in Moe's Famous Queso?
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Moe's Famous Queso is the chain's most celebrated condiment, and here are the approximate calorie counts by serving size:</p>
+                    <ul>
+                        <li><strong>In-meal serving</strong> (added inside your burrito or bowl): ~120 calories, 9g fat, 4g carbs</li>
+                        <li><strong>Cup (side order):</strong> ~120–150 calories</li>
+                        <li><strong>Bowl (large side order):</strong> ~240–300 calories</li>
+                    </ul>
+                    <p>The queso is a <strong>cheese sauce</strong> made with processed cheese, green chiles, and seasonings. It's rich in fat and sodium. Enjoy it in moderation if you're tracking macros — but it's absolutely worth it as an occasional treat!</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    Does Moe's have low-carb or keto-friendly options?
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! Moe's is actually one of the better fast-casual options for low-carb and ketogenic diets. Here's how to order keto at Moe's:</p>
+                    <ul>
+                        <li>Choose a <strong>Burrito Bowl or Salad Bowl</strong> (no tortilla — eliminates 47g carbs)</li>
+                        <li>Skip the <strong>Seasoned Rice</strong> (eliminates 36g carbs)</li>
+                        <li>Skip the <strong>Beans</strong> (eliminates 17g carbs)</li>
+                        <li>Choose <strong>Chicken, Steak, Pork, or Beef</strong> as your protein</li>
+                        <li>Add <strong>Cheese, Sour Cream, Guacamole</strong> (all low-carb, high-fat)</li>
+                        <li>Add <strong>Pico de Gallo or House Salsa</strong> for flavor</li>
+                    </ul>
+                    <p>This build can get you to <strong>under 10g net carbs</strong> while delivering 30+ grams of protein. A genuinely solid keto option!</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    Which protein at Moe's has the most protein per calorie?
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Ranked by protein-to-calorie efficiency (grams of protein per 100 calories):</p>
+                    <ul>
+                        <li>🥇 <strong>Adobo Chicken</strong> — 14.7g protein per 100 cal (best ratio)</li>
+                        <li>🥈 <strong>Sirloin Steak</strong> — 13g protein per 100 cal</li>
+                        <li>🥉 <strong>Pulled Pork</strong> — 10.5g protein per 100 cal</li>
+                        <li>4️⃣ <strong>Ground Beef</strong> — 9.5g protein per 100 cal</li>
+                        <li>5️⃣ <strong>Tofu</strong> — 10g protein per 100 cal</li>
+                    </ul>
+                    <p><strong>Adobo Chicken is the clear winner</strong> for anyone prioritizing high protein with lower calories. It's no coincidence that it's also the most popular protein on the menu.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    How many calories are in Moe's Chips and Salsa?
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Moe's Tortilla Chips &amp; Salsa — the famous FREE side that comes with every entrée — contains approximately:</p>
+                    <ul>
+                        <li><strong>Calories:</strong> ~430 kcal (full serving)</li>
+                        <li><strong>Fat:</strong> ~24g</li>
+                        <li><strong>Carbohydrates:</strong> ~52g</li>
+                        <li><strong>Protein:</strong> ~5g</li>
+                        <li><strong>Sodium:</strong> ~280mg</li>
+                    </ul>
+                    <p>The chips are the biggest calorie "wildcard" in a Moe's meal. If you're calorie-conscious, consider skipping the chips or sharing them with a dining partner. The salsa itself is very low in calories; most of the 430 calories come from the chips.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    Does Moe's have vegan or fully plant-based options?
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, Moe's has great options for vegan diners. Here's how to build a fully plant-based meal:</p>
+                    <ul>
+                        <li><strong>Base:</strong> Burrito Bowl or Salad Bowl (no tortilla)</li>
+                        <li><strong>Protein:</strong> Tofu or No Protein</li>
+                        <li><strong>Rice:</strong> Seasoned Rice (check with staff — some locations may use butter)</li>
+                        <li><strong>Beans:</strong> Black Beans or Pinto Beans</li>
+                        <li><strong>Skip:</strong> Cheese, Sour Cream, Queso</li>
+                        <li><strong>Add:</strong> Pico de Gallo, House Salsa, Roasted Corn Salsa, Mango Salsa, Lettuce, Jalapeños, Cucumbers</li>
+                    </ul>
+                    <p>Always inform Moe's staff of your dietary requirements so they can confirm current ingredient sourcing, as recipes and suppliers can change.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    How accurate is this Moe's nutrition calculator?
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>This calculator provides <strong>approximate nutritional estimates</strong> based on the best publicly available Moe's menu data. Here are some important caveats:</p>
+                    <ul>
+                        <li>Values are based on <strong>standard serving sizes</strong> — actual portions may vary by location and staff</li>
+                        <li>Moe's is a <strong>franchise system</strong>, so individual locations may use slightly different recipes or portion sizes</li>
+                        <li>Menu items and nutrition data are updated periodically — our data reflects <strong>2025–2026 estimates</strong></li>
+                        <li>This tool is designed for <strong>general guidance only</strong>, not clinical or medical nutritional planning</li>
+                    </ul>
+                    <p>For the most precise nutrition information, visit <strong>www.moes.com</strong>, use the official Moe's app, or ask at your local Moe's location. Always consult a registered dietitian for personalized dietary advice.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    What is the most high-calorie item on the Moe's menu?
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>The most calorie-dense combination at Moe's is the fully loaded <strong>Moe Meat Moe Cheese Burrito</strong> with double meat and double cheese, especially when paired with Chips &amp; Salsa and a fountain drink. Here's an estimate of the maximum calorie build:</p>
+                    <ul>
+                        <li>12" Flour Tortilla: 290 cal</li>
+                        <li>Double Ground Beef: 420 cal</li>
+                        <li>Double Cheese: 200 cal</li>
+                        <li>Seasoned Rice: 170 cal</li>
+                        <li>Pinto Beans: 90 cal</li>
+                        <li>Queso + Sour Cream + Guacamole: 260 cal</li>
+                        <li>Chips &amp; Salsa (side): 430 cal</li>
+                        <li>Fountain Drink: 200 cal</li>
+                    </ul>
+                    <p><strong>Grand Total: ~2,060+ calories</strong> — more than a full day's worth of calories in a single meal! This is a treat for special occasions, not an everyday order.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    Can I customize my Moe's order for specific dietary macros?
+                    <span class="faq-toggle">▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Absolutely — Moe's assembly-line model is one of the best in the fast-casual industry for macro customization. Here are some common macro-focused builds:</p>
+                    <ul>
+                        <li><strong>High Protein, Low Carb:</strong> Bowl + Chicken + Cheese + Sour Cream + Pico. Skip rice, beans, tortilla.</li>
+                        <li><strong>High Carb, Moderate Protein:</strong> Burrito + Chicken + Rice + Beans + Pico. Skip cheese and creamy toppings.</li>
+                        <li><strong>Balanced Macros (~40/30/30):</strong> Bowl + Chicken + Rice + Black Beans + Guacamole + Pico.</li>
+                        <li><strong>Low Fat, High Protein:</strong> Bowl + Chicken + Black Beans + House Salsa + Pico + Lettuce. Skip all creamy additions.</li>
+                    </ul>
+                    <p>Use our <a href="#nutrition-tool" onclick="document.getElementById('nutrition-tool').scrollIntoView({behavior:'smooth'}); return false;" style="color:var(--primary); font-weight:600;">Nutrition Calculator</a> above to experiment with different combinations and find your perfect macro balance!</p>
+                </div>
+            </div>
+
+        </div><!-- /faq-container -->
+
+    </section>
+
+
+</div><!-- /container -->
+
+
+<!-- ============================================================
+     FOOTER (identical to homepage)
+============================================================ -->
+<footer class="restaurant-footer fw-breakout">
+    <div class="footer-content">
+        <div class="footer-contact">
+            <div class="footer-item">
+                <h4>📍 About This Site</h4>
+                <p>moessouthwestgrillmenu.com is an independent fan resource and menu guide. We are not affiliated with Moe's Southwest Grill or GoTo Foods.</p>
+            </div>
+            <div class="footer-item">
+                <h4>🔗 Quick Links</h4>
+                <p>
+                    <a href="https://moessouthwestgrillmenu.com/">Home</a><br>
+                    <a href="https://moessouthwestgrillmenu.com/about-us/">About Us</a><br>
+                    <a href="https://moessouthwestgrillmenu.com/contact-us/">Contact Us</a><br>
+                    <a href="https://moessouthwestgrillmenu.com/disclaimer/">Disclaimer</a>
+                </p>
+            </div>
+            <div class="footer-item">
+                <h4>📜 Legal</h4>
+                <p>
+                    <a href="https://moessouthwestgrillmenu.com/privacy-policy/">Privacy Policy</a><br>
+                    <a href="https://moessouthwestgrillmenu.com/disclaimer/">Terms &amp; Disclaimer</a><br>
+                    <a href="https://www.moes.com" target="_blank" rel="nofollow">Official Moe's Website</a>
+                </p>
+            </div>
+            <div class="footer-item">
+                <h4>🌐 Official Moe's</h4>
+                <p>For official menu, locations, nutrition data, and ordering:<br><a href="https://www.moes.com" target="_blank" rel="nofollow">www.moes.com</a></p>
+            </div>
+        </div>
+
+        <div class="footer-disclaimer">
+            <strong>⚠️ Important Disclaimer:</strong> moessouthwestgrillmenu.com is an independent, third-party information and menu resource. We are <strong>NOT</strong> affiliated with, endorsed by, or connected to Moe's Southwest Grill, GoTo Foods, or any of their subsidiaries. All nutrition information provided on this page is for general informational purposes only and represents approximate estimates. <strong>Actual nutritional values may vary by location, serving size, and preparation.</strong> For official and precise nutrition data, please visit <a href="https://www.moes.com" target="_blank" rel="nofollow" style="color:var(--secondary);">www.moes.com</a> or consult your local Moe's Southwest Grill directly.
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 moessouthwestgrillmenu.com — Independent Menu Resource &amp; Nutrition Guide · All Rights Reserved</p>
+            <p style="margin-top:8px;">🌮 "Welcome to Moe's!" is a registered trademark of Moe's Southwest Grill / GoTo Foods. Used for informational purposes only.</p>
+        </div>
+    </div>
+</footer>
+
+
+<!-- ============================================================
+     JAVASCRIPT — Nutrition Calculator + FAQ
+============================================================ -->
+<script>
+
+/* ============================================================
+   NUTRITION DATA MAP
+   Each key matches an input's value attribute.
+   { name, cat, cal, p (protein), f (fat), c (carbs), s (sodium) }
+============================================================ */
+const ND = {
+    /* BASES */
+    'base-burrito':      { name:'Burrito (12" Flour Tortilla)',     cat:'Base',    cal:290, p:8,   f:7,    c:47, s:560  },
+    'base-bowl':         { name:'Burrito Bowl',                     cat:'Base',    cal:0,   p:0,   f:0,    c:0,  s:0    },
+    'base-salad':        { name:'Salad Bowl (Romaine)',             cat:'Base',    cal:15,  p:1,   f:0,    c:2,  s:10   },
+    'base-soft-taco':    { name:'Soft Taco Shell',                  cat:'Base',    cal:130, p:4,   f:3,    c:22, s:250  },
+    'base-crispy-taco':  { name:'Crispy Corn Taco Shell',           cat:'Base',    cal:70,  p:1,   f:3.5,  c:9,  s:110  },
+    'base-quesadilla':   { name:'Quesadilla (Flour Tortilla)',      cat:'Base',    cal:260, p:7,   f:6,    c:42, s:490  },
+    /* PROTEINS */
+    'protein-chicken':   { name:'Adobo Chicken',                    cat:'Protein', cal:190, p:28,  f:7,    c:3,  s:560  },
+    'protein-steak':     { name:'Sirloin Steak',                    cat:'Protein', cal:200, p:26,  f:10,   c:1,  s:530  },
+    'protein-beef':      { name:'Ground Beef',                      cat:'Protein', cal:210, p:20,  f:14,   c:2,  s:480  },
+    'protein-pork':      { name:'Pulled Pork (Al Pastor)',          cat:'Protein', cal:210, p:22,  f:12,   c:2,  s:430  },
+    'protein-tofu':      { name:'Tofu (Seasoned)',                  cat:'Protein', cal:90,  p:9,   f:5,    c:3,  s:250  },
+    'protein-none':      { name:'No Protein',                       cat:'Protein', cal:0,   p:0,   f:0,    c:0,  s:0    },
+    /* RICE */
+    'rice-seasoned':     { name:'Seasoned Rice',                    cat:'Rice',    cal:170, p:3,   f:1.5,  c:36, s:530  },
+    'rice-none':         { name:'No Rice',                          cat:'Rice',    cal:0,   p:0,   f:0,    c:0,  s:0    },
+    /* BEANS */
+    'beans-black':       { name:'Black Beans',                      cat:'Beans',   cal:90,  p:6,   f:1,    c:17, s:350  },
+    'beans-pinto':       { name:'Pinto Beans',                      cat:'Beans',   cal:90,  p:6,   f:1,    c:17, s:310  },
+    'beans-none':        { name:'No Beans',                         cat:'Beans',   cal:0,   p:0,   f:0,    c:0,  s:0    },
+    /* CHEESE */
+    'cheese-shredded':   { name:'Shredded Cheese',                  cat:'Cheese',  cal:100, p:6,   f:8,    c:0,  s:170  },
+    /* SALSAS */
+    'salsa-queso':       { name:"Moe's Famous Queso",               cat:'Salsas',  cal:120, p:5,   f:9,    c:4,  s:440  },
+    'salsa-pico':        { name:'Pico de Gallo',                    cat:'Salsas',  cal:20,  p:1,   f:0,    c:4,  s:160  },
+    'salsa-corn':        { name:'Roasted Corn Salsa',               cat:'Salsas',  cal:60,  p:2,   f:1,    c:12, s:120  },
+    'salsa-house':       { name:'House Salsa (Verde)',               cat:'Salsas',  cal:15,  p:0,   f:0,    c:3,  s:135  },
+    'salsa-mango':       { name:'Mango Salsa',                      cat:'Salsas',  cal:45,  p:0,   f:0,    c:11, s:75   },
+    'salsa-tomatillo':   { name:'Tomatillo Salsa',                  cat:'Salsas',  cal:25,  p:0,   f:0,    c:5,  s:140  },
+    /* TOPPINGS */
+    'top-lettuce':       { name:'Shredded Lettuce',                 cat:'Toppings',cal:5,   p:0,   f:0,    c:1,  s:5    },
+    'top-sour-cream':    { name:'Sour Cream',                       cat:'Toppings',cal:60,  p:1,   f:5,    c:2,  s:25   },
+    'top-guacamole':     { name:'Fresh Guacamole',                  cat:'Toppings',cal:80,  p:1,   f:7,    c:5,  s:115  },
+    'top-jalapeno':      { name:'Jalapeños',                        cat:'Toppings',cal:5,   p:0,   f:0,    c:1,  s:95   },
+    'top-cucumber':      { name:'Cucumbers',                        cat:'Toppings',cal:5,   p:0,   f:0,    c:1,  s:0    },
+    'top-pickled-onions':{ name:'Pickled Onions',                   cat:'Toppings',cal:10,  p:0,   f:0,    c:2,  s:80   },
+    /* SIDES */
+    'side-chips':        { name:'Tortilla Chips & Salsa',           cat:'Sides',   cal:430, p:5,   f:24,   c:52, s:280  },
+    'side-queso-cup':    { name:'Queso Dip (Cup)',                   cat:'Sides',   cal:120, p:5,   f:9,    c:4,  s:440  },
+    'side-guac-side':    { name:'Guacamole (Side Cup)',             cat:'Sides',   cal:80,  p:1,   f:7,    c:5,  s:115  },
+    'side-drink':        { name:'Fountain Drink (Medium)',          cat:'Sides',   cal:200, p:0,   f:0,    c:54, s:35   }
+};
+
+/* Daily Reference Values */
+const DRV = { cal:2000, p:50, f:78, c:275, s:2300 };
+
+/* ====================================================
+   CALCULATE & RENDER
+==================================================== */
+function getSelectedValues() {
+    const inputs = document.querySelectorAll('#calculator input[type="radio"]:checked, #calculator input[type="checkbox"]:checked');
+    const results = [];
+    inputs.forEach(inp => {
+        if (inp.value && ND[inp.value]) results.push(inp.value);
+    });
+    return results;
+}
+
+function calcTotals(vals) {
+    const t = { cal:0, p:0, f:0, c:0, s:0 };
+    vals.forEach(v => {
+        const d = ND[v];
+        t.cal += d.cal;
+        t.p   += d.p;
+        t.f   += d.f;
+        t.c   += d.c;
+        t.s   += d.s;
+    });
+    return t;
+}
+
+function pct(val, max) {
+    return Math.min(Math.round((val / max) * 100), 100);
+}
+
+function barColor(p) {
+    if (p >= 100) return '#d32f2f';
+    if (p >= 80)  return '#f57c00';
+    return null; /* use CSS default */
+}
+
+function animateVal(elId, newVal, suffix) {
+    const el = document.getElementById(elId);
+    if (!el) return;
+    el.style.animation = 'none';
+    el.offsetHeight; /* reflow */
+    el.style.animation = 'countUp 0.3s ease';
+    el.textContent = newVal + (suffix || '');
+}
+
+function updateBar(barId, val, max) {
+    const bar = document.getElementById(barId);
+    if (!bar) return;
+    const p = pct(val, max);
+    bar.style.width = p + '%';
+    const c = barColor(p);
+    if (c) bar.style.background = c;
+    else   bar.style.background = '';
+}
+
+function renderOrderSummary(vals) {
+    const body = document.getElementById('order-summary-body');
+    const totalEl = document.getElementById('order-total-cal');
+    if (!body) return;
+
+    const items = vals.map(v => ND[v]).filter(d => d);
+    if (items.length === 0) {
+        body.innerHTML = '<div class="order-empty"><span class="order-empty-icon">🌮</span>Select items to build your meal!</div>';
+        if (totalEl) totalEl.textContent = '0 kcal';
+        return;
+    }
+
+    /* Group by category */
+    const cats = {};
+    items.forEach(d => {
+        if (!cats[d.cat]) cats[d.cat] = [];
+        cats[d.cat].push(d);
+    });
+
+    const catIcons = {
+        'Base':'🫓','Protein':'🥩','Rice':'🍚','Beans':'🫘',
+        'Cheese':'🧀','Salsas':'🫙','Toppings':'🥗','Sides':'🍟'
+    };
+
+    let html = '';
+    const catOrder = ['Base','Protein','Rice','Beans','Cheese','Salsas','Toppings','Sides'];
+    catOrder.forEach(cat => {
+        if (!cats[cat]) return;
+        html += `<div style="font-size:11px; font-weight:700; color:var(--primary); text-transform:uppercase; letter-spacing:1px; padding: 8px 0 4px; border-top:1px solid #f0ede8; margin-top:4px;">${catIcons[cat]||''} ${cat}</div>`;
+        cats[cat].forEach(d => {
+            const calClass = d.cal === 0 ? 'zero' : '';
+            const calText  = d.cal === 0 ? '0 kcal' : `${d.cal} kcal`;
+            html += `
+                <div class="order-row">
+                    <div class="order-row-name">${d.name}</div>
+                    <div class="order-row-cal ${calClass}">${calText}</div>
+                </div>`;
+        });
+    });
+
+    body.innerHTML = html;
+
+    /* Total */
+    const total = items.reduce((sum, d) => sum + d.cal, 0);
+    if (totalEl) totalEl.textContent = total + ' kcal';
+}
+
+function updateDisplay() {
+    const vals = getSelectedValues();
+    const t    = calcTotals(vals);
+
+    /* Calories */
+    animateVal('total-calories', t.cal, '');
+
+    /* Cal daily value bar */
+    const calPct = pct(t.cal, DRV.cal);
+    const calBar  = document.getElementById('cal-dv-bar');
+    const calLbl  = document.getElementById('cal-dv-label');
+    if (calBar) {
+        calBar.style.width = calPct + '%';
+        const c = barColor(calPct);
+        calBar.style.background = c || 'linear-gradient(90deg, #2D7D46, #E8913A)';
+    }
+    if (calLbl) calLbl.textContent = `${calPct}% of 2,000 kcal daily value`;
+
+    /* Macros */
+    animateVal('protein-val', Math.round(t.p * 10) / 10, 'g');
+    animateVal('fat-val',     Math.round(t.f * 10) / 10, 'g');
+    animateVal('carbs-val',   Math.round(t.c * 10) / 10, 'g');
+    animateVal('sodium-val',  Math.round(t.s),            'mg');
+
+    /* Macro DV labels */
+    const dvLabels = {
+        'protein-dv': [t.p, DRV.p],
+        'fat-dv':     [t.f, DRV.f],
+        'carbs-dv':   [t.c, DRV.c],
+        'sodium-dv':  [t.s, DRV.s]
+    };
+    Object.entries(dvLabels).forEach(([id, [val, max]]) => {
+        const el = document.getElementById(id);
+        if (el) el.textContent = pct(val, max) + '% DV';
+    });
+
+    /* Macro bars */
+    updateBar('protein-bar', t.p, DRV.p);
+    updateBar('fat-bar',     t.f, DRV.f);
+    updateBar('carbs-bar',   t.c, DRV.c);
+    updateBar('sodium-bar',  t.s, DRV.s);
+
+    /* Order summary */
+    renderOrderSummary(vals);
+}
+
+/* ====================================================
+   RESET
+==================================================== */
+function resetMeal() {
+    /* Uncheck all checkboxes */
+    document.querySelectorAll('#calculator input[type="checkbox"]').forEach(cb => {
+        cb.checked = false;
+    });
+    /* Reset radios to defaults */
+    document.querySelectorAll('#calculator input[type="radio"]').forEach(rb => {
+        rb.checked = false;
+    });
+    /* Trigger defaults */
+    const defaults = ['base-burrito', 'protein-chicken', 'rice-seasoned', 'beans-black'];
+    defaults.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.checked = true;
+    });
+    updateDisplay();
+
+    /* Scroll to tool */
+    document.getElementById('nutrition-tool').scrollIntoView({ behavior:'smooth' });
+}
+
+/* ====================================================
+   FAQ ACCORDION
+==================================================== */
+function toggleFaq(questionEl) {
+    const item = questionEl.parentElement;
+    const isActive = item.classList.contains('active');
+
+    /* Close all open items */
+    document.querySelectorAll('.faq-item.active').forEach(el => {
+        el.classList.remove('active');
+    });
+
+    /* Open clicked item if it was not already open */
+    if (!isActive) {
+        item.classList.add('active');
+    }
+}
+
+/* ====================================================
+   NUTRITION CHART FILTER
+==================================================== */
+function filterChart(cat, btn) {
+    /* Toggle active button */
+    document.querySelectorAll('.chart-filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    const rows = document.querySelectorAll('#nutrition-table tbody tr');
+    rows.forEach(row => {
+        if (cat === 'all') {
+            row.style.display = '';
+        } else {
+            const rowCat = row.getAttribute('data-cat');
+            row.style.display = (rowCat === cat) ? '' : 'none';
+        }
+    });
+}
+
+/* ====================================================
+   INIT
+==================================================== */
+document.addEventListener('DOMContentLoaded', function () {
+
+    /* Set default selections */
+    const defaults = ['base-burrito', 'protein-chicken', 'rice-seasoned', 'beans-black'];
+    defaults.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.checked = true;
+    });
+
+    /* Bind all calculator inputs */
+    document.querySelectorAll('#calculator input').forEach(inp => {
+        inp.addEventListener('change', updateDisplay);
+    });
+
+    /* Initial render */
+    updateDisplay();
+});
+
+</script>
+</body>
+</html>

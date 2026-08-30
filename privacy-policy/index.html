@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy Policy for moessouthwestgrillmenu.com - How we handle your data and privacy">
+    <title>Privacy Policy | Moe's Southwest Grill Menu Guide | moessouthwestgrillmenu.com</title>
+
+<style>
+
+/* ============================================================
+   GENERATEPRESS THEME OVERRIDES — FULL-WIDTH BREAK-OUT
+   Neutralises every GP wrapper so there is NO white box
+   and the page stretches edge-to-edge on all screen sizes.
+============================================================ */
+
+/* 1. Strip padding / margin / background from every GP content wrapper */
+.entry-content,
+.entry-content > *:first-child,
+.site-content,
+.content-area,
+.inside-article,
+.inside-page-hero,
+article.post,
+article.page,
+.post-content,
+.page-content,
+.hentry,
+.generate-columns-container,
+.inside-right-sidebar,
+.inside-left-sidebar {
+    padding:    0 !important;
+    margin:     0 !important;
+    max-width:  100% !important;
+    width:      100% !important;
+    background: transparent !important;
+    border:     none !important;
+    box-shadow: none !important;
+}
+
+/* 2. Remove the white background on the main/content area */
+.site-main,
+#main,
+#content,
+.inside-site-inner {
+    background: transparent !important;
+    padding:    0 !important;
+    margin:     0 !important;
+    max-width:  100% !important;
+}
+
+/* 3. Kill the grid-container max-width */
+.grid-container {
+    max-width: 100% !important;
+    padding:   0 !important;
+}
+
+/* 4. Match the body/site background to our design */
+body,
+.site {
+    background-color: #fdf6ee !important;
+}
+
+/* 5. Hide sidebars — page is full-width */
+.widget-area,
+.sidebar-primary,
+.sidebar-secondary,
+#sidebar,
+#secondary {
+    display: none !important;
+}
+
+/* ============================================================
+   END GP OVERRIDES
+============================================================ */
+
+
+/* ---- RESET ---- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* ---- DESIGN TOKENS ---- */
+:root {
+    --primary:   #B5451B;
+    --secondary: #E8913A;
+    --accent:    #2D7D46;
+    --gold:      #E8913A;
+    --dark-bg:   #1a1a1a;
+    --light-bg:  #fdf6ee;
+    --card-bg:   #ffffff;
+    --text-dark: #2c2c2c;
+    --text-mid:  #444444;
+    --text-light:#666666;
+}
+
+/* ---- BODY ---- */
+body {
+    font-family: 'Georgia', 'Garamond', serif;
+    background-color: var(--light-bg);
+    color: var(--text-dark);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* ============================================================
+   FULL-WIDTH BREAK-OUT HELPER
+   Applied to disclaimer, hero, toc, footer so they always
+   span 100vw regardless of any remaining parent constraints.
+============================================================ */
+.fw-breakout {
+    width:         100vw !important;
+    max-width:     100vw !important;
+    position:      relative;
+    left:          50%;
+    margin-left:  -50vw !important;
+    margin-right: -50vw !important;
+    box-sizing:    border-box;
+}
+
+
+/* ============================================================
+   DISCLAIMER BANNER
+============================================================ */
+.disclaimer-banner {
+    background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%);
+    border-bottom: 3px solid #ff9800;
+    padding: 14px 20px;
+    text-align: center;
+    font-size: 13px;
+    color: #333;
+}
+.disclaimer-banner strong { color: #d84315; font-weight: 700; }
+.disclaimer-banner a      { color: #0066cc; text-decoration: underline; }
+
+
+/* ============================================================
+   HERO SECTION
+============================================================ */
+.hero-section {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    color: #fff;
+    padding: 55px 30px 45px;
+    text-align: center;
+    border-bottom: 5px solid var(--gold);
+    animation: fadeInDown 0.8s ease-out;
+}
+.hero-section h1 {
+    font-size: clamp(30px, 6vw, 58px);
+    font-weight: 700;
+    margin-bottom: 14px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.5);
+    font-family: 'Playfair Display','Georgia',serif;
+    letter-spacing: 1px;
+}
+.hero-tagline {
+    font-size: clamp(15px, 3vw, 21px);
+    color: var(--gold);
+    margin-bottom: 18px;
+    font-style: italic;
+}
+.hero-sub {
+    font-size: 15px;
+    color: #ddd;
+    margin-bottom: 28px;
+}
+
+@keyframes fadeInDown {
+    from { opacity:0; transform:translateY(-20px); }
+    to   { opacity:1; transform:translateY(0); }
+}
+@keyframes fadeInUp {
+    from { opacity:0; transform:translateY(20px); }
+    to   { opacity:1; transform:translateY(0); }
+}
+
+
+/* ============================================================
+   MAIN CONTAINER
+============================================================ */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 30px;
+    width: 100%;
+}
+
+section {
+    margin-bottom: 65px;
+    animation: fadeInUp .7s ease-out;
+}
+
+
+/* ============================================================
+   SECTION HEADERS
+============================================================ */
+section h2 {
+    font-size: clamp(24px, 5vw, 44px);
+    font-family: 'Playfair Display','Georgia',serif;
+    color: var(--primary);
+    margin-bottom: 28px;
+    padding-bottom: 14px;
+    border-bottom: 3px solid var(--gold);
+    letter-spacing: 1px;
+}
+section h3 {
+    font-size: clamp(17px, 3.5vw, 28px);
+    font-family: 'Playfair Display','Georgia',serif;
+    color: var(--primary);
+    margin-top: 35px;
+    margin-bottom: 18px;
+}
+
+
+/* ============================================================
+   CONTENT SECTIONS
+============================================================ */
+.policy-intro {
+    background: linear-gradient(135deg,#fdf0e0,#fdf6ee);
+    padding: 28px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    border-left: 5px solid var(--accent);
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.policy-intro p {
+    margin-bottom: 15px;
+}
+
+.highlight { 
+    color: var(--accent); 
+    font-weight: 600; 
+}
+
+.policy-content {
+    background: var(--card-bg);
+    padding: 32px;
+    border-radius: 8px;
+    margin-bottom: 35px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+    line-height: 1.85;
+}
+
+.policy-content h3 {
+    margin-top: 32px;
+    margin-bottom: 18px;
+    font-size: 20px;
+}
+
+.policy-content h4 {
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 17px;
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.policy-content p {
+    margin-bottom: 16px;
+    font-size: 15px;
+    color: var(--text-dark);
+}
+
+.policy-content ul {
+    margin: 16px 0 16px 25px;
+    list-style: disc;
+}
+
+.policy-content li {
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+.policy-content ol {
+    margin: 16px 0 16px 25px;
+    list-style: decimal;
+}
+
+.policy-content ol li {
+    margin-bottom: 10px;
+}
+
+.info-box {
+    background: linear-gradient(135deg,#fdf0e0,#faf8f3);
+    padding: 20px;
+    border-left: 4px solid var(--secondary);
+    border-radius: 4px;
+    margin: 24px 0;
+}
+
+.info-box p {
+    margin: 0;
+    font-size: 14px;
+    color: var(--text-dark);
+}
+
+.info-box strong {
+    color: var(--primary);
+}
+
+
+/* ============================================================
+   CONTACT BOX
+============================================================ */
+.contact-section {
+    background: linear-gradient(135deg, var(--primary), #8b2500);
+    color: #fff;
+    padding: 48px 40px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.contact-section h3 {
+    color: #fff !important;
+    border-bottom: none !important;
+    margin-top: 0 !important;
+    font-size: 28px;
+}
+
+.contact-section p {
+    font-size: 16px;
+    margin-bottom: 24px;
+    color: #ddd;
+}
+
+.contact-info {
+    background: rgba(255,255,255,.1);
+    padding: 24px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.contact-info strong {
+    display: block;
+    font-size: 14px;
+    color: var(--gold);
+    margin-bottom: 8px;
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: color .3s ease;
+}
+
+.contact-info a:hover {
+    color: var(--gold);
+}
+
+
+/* ============================================================
+   FOOTER
+============================================================ */
+.restaurant-footer {
+    background: #1a1a1a;
+    color: #ccc;
+    padding: 52px 30px;
+    text-align: center;
+    border-top: 3px solid var(--gold);
+    margin-top: 60px;
+}
+.footer-content  { max-width: 1400px; margin: 0 auto; }
+.footer-contact  {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 28px;
+    margin-bottom: 32px;
+}
+.footer-item h4 { color: var(--gold); margin-bottom: 10px; font-size: 15px; }
+.footer-item p  { font-size: 13px; line-height: 1.7; }
+.footer-item a  { color: var(--secondary); text-decoration: none; }
+.footer-item a:hover { text-decoration: underline; }
+.footer-bottom  { border-top: 1px solid rgba(255,255,255,.1); padding-top: 22px; font-size: 12px; }
+.footer-disclaimer {
+    background: rgba(255,193,7,.1);
+    border-left: 3px solid var(--gold);
+    padding: 16px;
+    margin-top: 22px;
+    border-radius: 4px;
+    font-size: 11px;
+    line-height: 1.7;
+    text-align: left;
+}
+.footer-disclaimer strong { color: var(--gold); }
+
+
+/* ============================================================
+   RESPONSIVE — 1024px
+============================================================ */
+@media (max-width: 1024px) {
+    .container         { padding: 0 22px; }
+    .hero-section      { padding: 42px 22px; }
+    .restaurant-footer { padding: 38px 22px; }
+}
+
+/* ============================================================
+   RESPONSIVE — 768px
+============================================================ */
+@media (max-width: 768px) {
+    .container { padding: 0 16px; }
+
+    .hero-section { padding: 34px 16px; }
+    .hero-section h1 { font-size: 26px; }
+
+    .policy-intro { padding: 22px; }
+    .policy-content { padding: 22px; }
+
+    .contact-section { padding: 34px 22px; }
+
+    .restaurant-footer { padding: 28px 16px; }
+    .footer-contact    { grid-template-columns: 1fr; gap: 18px; }
+}
+
+/* ============================================================
+   RESPONSIVE — 480px
+============================================================ */
+@media (max-width: 480px) {
+    body { font-size: 14px; }
+    .container { padding: 0 13px; }
+
+    .hero-section  { padding: 24px 13px; }
+    .hero-section h1 { font-size: 22px; }
+
+    section { margin-bottom: 38px; }
+
+    .policy-intro { padding: 18px; }
+    .policy-content { padding: 18px; }
+
+    .contact-section { padding: 24px 16px; margin: 35px 0; }
+    .contact-section h3 { font-size: 22px; }
+
+    .restaurant-footer { padding: 22px 13px; }
+
+    .disclaimer-banner { font-size: 11px; padding: 10px 12px; }
+
+    .policy-content h3 {
+        font-size: 18px;
+        margin-top: 24px;
+    }
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- ============================================================
+     DISCLAIMER BANNER
+============================================================ -->
+<div class="disclaimer-banner fw-breakout">
+    <strong>⚠️ IMPORTANT DISCLAIMER:</strong> This is an independent menu resource and guide created by <strong>moessouthwestgrillmenu.com</strong>. This is <strong>NOT</strong> the official Moe's Southwest Grill website. For official information, visit <a href="https://www.moes.com" target="_blank" rel="nofollow">www.moes.com</a> or use the <strong>Moe's official app</strong>.
+</div>
+
+
+<!-- ============================================================
+     HERO
+============================================================ -->
+<div class="hero-section fw-breakout">
+    <h1>🔒 Privacy Policy</h1>
+    <p class="hero-tagline">"Your Privacy Matters to Us"</p>
+    <p class="hero-sub">How moessouthwestgrillmenu.com collects, uses, and protects your personal information</p>
+</div>
+
+
+<!-- ============================================================
+     MAIN CONTENT
+============================================================ -->
+<div class="container">
+
+    <!-- ========== INTRODUCTION ========== -->
+    <section id="introduction">
+        
+        <div class="policy-intro">
+            <p><strong>Last Updated: June 7, 2026</strong></p>
+            <p>Welcome to moessouthwestgrillmenu.com ("Website," "we," "us," or "our"). We are committed to protecting your privacy and ensuring you have a positive experience on our website. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website.</p>
+            <p><strong>Please read this Privacy Policy carefully.</strong> If you do not agree with our policies and practices, please do not use our website.</p>
+        </div>
+
+        <div class="policy-content">
+
+            <h3>1. Information We Collect</h3>
+
+            <h4>A. Information You Provide Directly</h4>
+            <p>We may collect information that you voluntarily provide when you interact with our website, including:</p>
+            <ul>
+                <li><strong>Contact Information:</strong> If you contact us via email or contact forms, we collect your email address, name, and message content.</li>
+                <li><strong>Survey & Feedback Data:</strong> If you participate in surveys or provide feedback, we collect your responses.</li>
+                <li><strong>Cookies & Preferences:</strong> Information you provide when customizing website settings or preferences.</li>
+            </ul>
+
+            <h4>B. Information Collected Automatically</h4>
+            <p>When you visit our website, we automatically collect certain information about your device and browsing behavior:</p>
+            <ul>
+                <li><strong>Log Data:</strong> IP address, browser type, operating system, pages visited, time and date of visits, referring website, and duration of visits.</li>
+                <li><strong>Device Information:</strong> Device type, device ID, hardware model, and operating system version.</li>
+                <li><strong>Geographic Information:</strong> Approximate location based on IP address (not precise location).</li>
+                <li><strong>Cookies & Similar Technologies:</strong> We use cookies, web beacons, and similar tracking technologies to enhance your experience and gather analytics.</li>
+                <li><strong>Browsing Behavior:</strong> Pages you view, links you click, time spent on pages, and actions taken on the website.</li>
+            </ul>
+
+            <h4>C. Third-Party Data Collection</h4>
+            <p>We work with third-party services that may also collect information about you:</p>
+            <ul>
+                <li><strong>Google Analytics:</strong> Google Analytics collects information about your website usage through cookies. Google may use this information to show you targeted advertisements on other websites.</li>
+                <li><strong>Advertising Partners:</strong> Third-party advertisers may collect data through cookies and pixels to deliver relevant ads.</li>
+                <li><strong>Social Media Platforms:</strong> If you interact with our content on social media, those platforms collect information according to their own privacy policies.</li>
+            </ul>
+
+            <h3>2. How We Use Your Information</h3>
+
+            <p>We use the information we collect for the following purposes:</p>
+            <ul>
+                <li><strong>Website Operation:</strong> To maintain, operate, and improve our website functionality and content.</li>
+                <li><strong>Analytics & Performance:</strong> To understand how visitors use our website and to measure website performance.</li>
+                <li><strong>Content Personalization:</strong> To customize your experience and display relevant content.</li>
+                <li><strong>Communication:</strong> To respond to your inquiries, feedback, and customer service requests.</li>
+                <li><strong>Marketing & Advertising:</strong> To deliver targeted advertisements and promotional content that may be of interest to you.</li>
+                <li><strong>Security & Compliance:</strong> To detect, prevent, and address fraud, abuse, security issues, and technical problems.</li>
+                <li><strong>Legal Compliance:</strong> To comply with legal obligations and enforce our Terms of Service and other agreements.</li>
+            </ul>
+
+            <h3>3. Cookies & Similar Technologies</h3>
+
+            <h4>What Are Cookies?</h4>
+            <p>Cookies are small text files stored on your device when you visit a website. They help us remember your preferences and track your browsing behavior.</p>
+
+            <h4>Types of Cookies We Use</h4>
+            <ul>
+                <li><strong>Essential Cookies:</strong> Required for website functionality (e.g., security, session management).</li>
+                <li><strong>Analytical Cookies:</strong> Help us understand how visitors use our website (e.g., Google Analytics).</li>
+                <li><strong>Advertising Cookies:</strong> Allow third-party advertisers to track your behavior and show you targeted ads.</li>
+                <li><strong>Preference Cookies:</strong> Remember your website preferences and settings.</li>
+            </ul>
+
+            <h4>Managing Cookies</h4>
+            <p>Most web browsers allow you to control cookies through browser settings. You can:</p>
+            <ul>
+                <li>Accept or reject cookies</li>
+                <li>Delete cookies from your device</li>
+                <li>Set your browser to notify you when a cookie is being set</li>
+                <li>Use private/incognito browsing mode to avoid storing cookies</li>
+            </ul>
+
+            <div class="info-box">
+                <strong>⚠️ Note:</strong> <p>Disabling cookies may limit your ability to use certain features of our website. Some essential functionality may not work properly without cookies.</p>
+            </div>
+
+            <h3>4. Google Analytics & Advertising</h3>
+
+            <h4>Google Analytics</h4>
+            <p>Our website uses Google Analytics, a web analytics service provided by Google, Inc. ("Google"). Google Analytics uses cookies to help us analyze how visitors use our website.</p>
+            <p>The information collected by Google Analytics includes:</p>
+            <ul>
+                <li>Your IP address</li>
+                <li>Pages you visit and time spent on each page</li>
+                <li>Referring website URL</li>
+                <li>Your geographic location (approximate)</li>
+                <li>Device type and browser information</li>
+            </ul>
+            <p>Google may use this data to:</p>
+            <ul>
+                <li>Track and report website traffic</li>
+                <li>Show you targeted advertisements on other Google properties</li>
+                <li>Improve their products and services</li>
+            </ul>
+            <p><strong>Opt-out Options:</strong> You can opt out of Google Analytics by:</p>
+            <ul>
+                <li>Installing the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="nofollow">Google Analytics Opt-out Browser Add-on</a></li>
+                <li>Adjusting your Google Account settings</li>
+                <li>Using Google's <a href="https://www.google.com/settings/u/0/ads" target="_blank" rel="nofollow">Ads Settings</a> to disable personalized ads</li>
+            </ul>
+            <p>For more information, visit Google's <a href="https://policies.google.com/privacy" target="_blank" rel="nofollow">Privacy Policy</a>.</p>
+
+            <h4>Google AdSense & Advertising</h4>
+            <p>We may use Google AdSense to display advertisements on our website. Google may use cookies and the DoubleClick cookie to serve ads based on your prior visits to our website and other websites.</p>
+            <p>Google's advertising partners may collect and use information about your online activities to provide you with targeted advertisements. You can disable personalized ads through Google's <a href="https://www.google.com/settings/u/0/ads/authenticated" target="_blank" rel="nofollow">Ads Preferences page</a>.</p>
+
+            <h3>5. Third-Party Links & Services</h3>
+
+            <p>Our website may contain links to third-party websites (e.g., www.moes.com, Google, social media platforms). We are not responsible for the privacy practices of these external sites.</p>
+            <p><strong>We strongly encourage you to review the privacy policies of any third-party websites before providing your personal information.</strong></p>
+            <p>When you click on third-party links, you are subject to their privacy policies, not ours.</p>
+
+            <h3>6. Data Retention</h3>
+
+            <p>We retain the information we collect for as long as necessary to fulfill the purposes for which it was collected:</p>
+            <ul>
+                <li><strong>Contact Information:</strong> Retained until you request deletion or 2 years of inactivity.</li>
+                <li><strong>Analytics Data:</strong> Google Analytics typically retains data for 26 months.</li>
+                <li><strong>Cookies:</strong> Retained according to their expiration settings (typically 6 months to 2 years).</li>
+                <li><strong>Log Data:</strong> Retained for security and analytics purposes (typically 90 days).</li>
+            </ul>
+
+            <h3>7. Your Rights & Choices</h3>
+
+            <h4>A. Access & Portability</h4>
+            <p>You have the right to know what information we have collected about you. Contact us at humarablogidhar@gmail.com to request a copy of your data.</p>
+
+            <h4>B. Correction & Deletion</h4>
+            <p>You may request that we correct, update, or delete your personal information. Please contact us with your request.</p>
+
+            <h4>C. Opt-Out Options</h4>
+            <p>You can opt out of:</p>
+            <ul>
+                <li><strong>Marketing Emails:</strong> Unsubscribe links are included in all marketing emails.</li>
+                <li><strong>Analytics Tracking:</strong> Disable cookies or use browser privacy settings.</li>
+                <li><strong>Personalized Advertising:</strong> Use Google's Ads Settings or browser settings.</li>
+            </ul>
+
+            <h4>D. Do Not Track (DNT)</h4>
+            <p>Some browsers include a "Do Not Track" feature. Currently, there is no industry standard for recognizing DNT signals. Our website does not respond to DNT signals, but you can use browser settings to limit tracking.</p>
+
+            <h3>8. Data Security</h3>
+
+            <p>We implement reasonable security measures to protect your information from unauthorized access, alteration, disclosure, or destruction. However, <strong>no method of transmission over the Internet or electronic storage is completely secure.</strong></p>
+            <p>We cannot guarantee absolute security. We encourage you to:</p>
+            <ul>
+                <li>Use strong passwords</li>
+                <li>Do not share sensitive personal information</li>
+                <li>Keep your browser and software updated</li>
+                <li>Use reputable security software</li>
+            </ul>
+
+            <h3>9. Children's Privacy (COPPA Compliance)</h3>
+
+            <p>Our website is not directed to children under 13 years of age. We do not knowingly collect personal information from children under 13.</p>
+            <p>If we discover that a child under 13 has provided personal information, we will delete such information immediately and take steps to cease collecting data from that child.</p>
+            <p>If you believe a child has provided information to our website, please contact us immediately at humarablogidhar@gmail.com.</p>
+
+            <h3>10. GDPR & International Privacy Laws</h3>
+
+            <h4>General Data Protection Regulation (GDPR)</h4>
+            <p>If you are located in the European Union or European Economic Area, GDPR gives you specific rights regarding your personal data:</p>
+            <ul>
+                <li>Right to access your data</li>
+                <li>Right to correction or deletion</li>
+                <li>Right to data portability</li>
+                <li>Right to withdraw consent</li>
+                <li>Right to lodge a complaint with your data protection authority</li>
+            </ul>
+            <p>We process EU personal data based on your consent. You may withdraw consent at any time by contacting us.</p>
+
+            <h4>California Consumer Privacy Act (CCPA)</h4>
+            <p>If you are a California resident, you have the right to:</p>
+            <ul>
+                <li>Know what personal information is collected</li>
+                <li>Delete personal information (with some exceptions)</li>
+                <li>Opt-out of the sale or sharing of personal information</li>
+                <li>Non-discrimination for exercising CCPA rights</li>
+            </ul>
+
+            <h3>11. International Data Transfers</h3>
+
+            <p>Our website is operated from the United States. If you access our website from outside the United States, your information may be transferred to, stored in, and processed in the United States.</p>
+            <p>By using our website, you consent to the transfer of your information to countries outside your country of residence, which may have different data protection rules.</p>
+
+            <h3>12. Changes to This Privacy Policy</h3>
+
+            <p>We may update this Privacy Policy from time to time to reflect changes in our practices, technology, or legal requirements.</p>
+            <p><strong>We will notify you of any significant changes by:</strong></p>
+            <ul>
+                <li>Posting the updated Privacy Policy on our website</li>
+                <li>Updating the "Last Updated" date at the top of this policy</li>
+                <li>Sending you an email notification (if applicable)</li>
+            </ul>
+            <p>Your continued use of our website after changes constitutes your acceptance of the updated Privacy Policy.</p>
+
+            <h3>13. Contact Us</h3>
+
+            <p>If you have questions about this Privacy Policy or our privacy practices, please contact us:</p>
+            
+            <div class="info-box">
+                <strong>Email:</strong>
+                <p><a href="mailto:humarablogidhar@gmail.com">humarablogidhar@gmail.com</a></p>
+            </div>
+
+            <p>We will respond to your inquiry within 30 days of receipt.</p>
+
+            <h3>14. Additional Information</h3>
+
+            <h4>Disclosure of Information</h4>
+            <p>We may disclose your information:</p>
+            <ul>
+                <li>To comply with legal obligations or court orders</li>
+                <li>To enforce our Terms of Service and other agreements</li>
+                <li>To protect the rights, privacy, safety, or property of our website, users, or the public</li>
+                <li>In connection with a merger, acquisition, bankruptcy, or sale of assets</li>
+                <li>With your explicit consent</li>
+            </ul>
+
+            <h4>Third-Party Service Providers</h4>
+            <p>We may share information with third-party service providers who assist us in operating our website and conducting business, including:</p>
+            <ul>
+                <li>Web hosting providers</li>
+                <li>Analytics services (Google Analytics)</li>
+                <li>Advertising networks</li>
+                <li>Email service providers</li>
+            </ul>
+            <p>These service providers are contractually obligated to protect your information and use it only for the purposes specified.</p>
+
+            <h4>Notification of Data Breach</h4>
+            <p>In the event of a data breach involving your personal information, we will notify you and relevant authorities as required by law within the appropriate timeframe.</p>
+
+            <h3>15. Disclaimer</h3>
+
+            <p>moessouthwestgrillmenu.com is an independent, fan-created resource and is <strong>NOT affiliated with, endorsed by, or connected to</strong> Moe's Southwest Grill, GoTo Foods, or any of their subsidiaries.</p>
+            <p>This Privacy Policy covers only moessouthwestgrillmenu.com. If you visit the official Moe's website or other third-party websites, their privacy policies apply.</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ========== CONTACT ========== -->
+    <section id="contact">
+        <div class="contact-section">
+            <h3>📧 Questions About Our Privacy Practices?</h3>
+            <p>If you have concerns about how we handle your information or would like to exercise your privacy rights, please don't hesitate to contact us.</p>
+            <div class="contact-info">
+                <strong>Email Us:</strong>
+                <a href="mailto:humarablogidhar@gmail.com">humarablogidhar@gmail.com</a>
+            </div>
+        </div>
+    </section>
+
+</div><!-- /.container -->
+
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<div class="restaurant-footer fw-breakout">
+    <div class="footer-content">
+        <div class="footer-contact">
+            <div class="footer-item">
+                <h4>📖 About This Site</h4>
+                <p>moessouthwestgrillmenu.com is an independent, fan-created menu resource. We are not affiliated with Moe's Southwest Grill or GoTo Foods.</p>
+            </div>
+            <div class="footer-item">
+                <h4>🔗 Quick Links</h4>
+                <p>
+                    <a href="https://moessouthwestgrillmenu.com/">Home</a><br>
+                    <a href="https://moessouthwestgrillmenu.com/about-us/">About Us</a><br>
+                    <a href="https://moessouthwestgrillmenu.com/contact-us/">Contact Us</a><br>
+                    <a href="https://moessouthwestgrillmenu.com/privacy-policy/">Privacy Policy</a>
+                </p>
+            </div>
+            <div class="footer-item">
+                <h4>🌐 Official Moe's Resources</h4>
+                <p>
+                    Official Website: <a href="https://www.moes.com" target="_blank" rel="nofollow">www.moes.com</a><br>
+                    Find a Location: <a href="https://www.moes.com/find-a-moes" target="_blank" rel="nofollow">Store Locator</a><br>
+                    Moe Rewards: <a href="https://www.moes.com/rewards" target="_blank" rel="nofollow">Join & Earn</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 moessouthwestgrillmenu.com — Independent Menu Resource. All Rights Reserved.</p>
+            <div class="footer-disclaimer">
+                <strong>⚠️ Disclaimer:</strong> moessouthwestgrillmenu.com is an independent, fan-created menu guide and is <strong>NOT affiliated with, endorsed by, or connected to</strong> Moe's Southwest Grill, GoTo Foods, or any of their subsidiaries. All menu items, prices, and information listed on this site are for informational purposes only. For the most accurate and up-to-date information, please visit <a href="https://www.moes.com" target="_blank" rel="nofollow">www.moes.com</a>.
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- ============================================================
+     JAVASCRIPT
+============================================================ -->
+<script>
+/* Smooth scroll for all # links */
+document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+    a.addEventListener('click', function(e) {
+        var target = document.querySelector(this.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+    });
+});
+</script>
+
+</body>
+</html>
